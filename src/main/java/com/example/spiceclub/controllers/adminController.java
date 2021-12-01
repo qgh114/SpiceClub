@@ -1,6 +1,8 @@
 package com.example.spiceclub.controllers;
 
 import com.example.spiceclub.models.Spice;
+import com.example.spiceclub.models.Recipe;
+import com.example.spiceclub.repositories.RecipeRepository;
 import com.example.spiceclub.repositories.SpiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,7 @@ public class adminController {
 
     @Autowired
     SpiceRepository spices;
+    RecipeRepository recipes;
 
 
     @GetMapping("/spices")
@@ -33,8 +36,6 @@ public class adminController {
     }
 
 
-
-
     @PatchMapping("/spices/{id}")
     public void patchSpicesById(@PathVariable Long id, @RequestBody Spice spiceToUpdate) {
         spices.findById(id).map(foundSpice -> {
@@ -46,7 +47,6 @@ public class adminController {
             spices.save(foundSpice);
             return "Spice updated";
         }).orElse("Spice not found");
-
 
     }
 
@@ -61,13 +61,55 @@ public class adminController {
         }
     }
 
-
     @DeleteMapping("/spice/{id}")
     public void deleteSpicesById(@PathVariable Long id) {
         spices.deleteById(id);
     }
 
+    @GetMapping("/recipes")
+    Iterable<Recipe> getRecipe(){
+        return recipes.findAll();
+    }
 
+    @GetMapping("/recipes/{id}")
+    private Recipe getRecipe(@PathVariable Long id){
+        return recipes.findById(id).get();
+    }
+
+    @PostMapping("/recipes")
+    private Recipe addRecipe(@RequestBody Recipe newRecipe){
+        return recipes.save(newRecipe);
+    }
+
+    @PatchMapping("/recipes/{id}")
+    public String patchRecipeById(@PathVariable Long id, @RequestBody Recipe recipeToUpdateWith) {
+        return recipes.findById(id).map(foundRecipe -> {
+            if (recipeToUpdateWith.getName() != null) foundRecipe.setName(recipeToUpdateWith.getName());
+            if (recipeToUpdateWith.getRecipeMethod() != null) foundRecipe.setRecipeMethod(recipeToUpdateWith.getRecipeMethod());
+            if (recipeToUpdateWith.getIngredient() != null) foundRecipe.setIngredient(recipeToUpdateWith.getIngredient());
+            if (recipeToUpdateWith.getImage() != null) foundRecipe.setImage(recipeToUpdateWith.getImage());
+            if (recipeToUpdateWith.getDescription() != null) foundRecipe.setDescription(recipeToUpdateWith.getDescription());
+            recipes.save(foundRecipe);
+            return "Recipe updated";
+        }).orElse("Recipe not found");
+    }
+
+    @PutMapping("/recipe/{id}")
+    public String updateRecipeById(@PathVariable Long id, @RequestBody Recipe recipeToUpdate) {
+        if (recipes.existsById(id)) {
+            recipeToUpdate.setId(id);
+            recipes.save(recipeToUpdate);
+            return "Spice was created";
+        } else {
+            return "Spice not found";
+        }
+    }
+
+
+    @DeleteMapping("/recipies/{id}")
+    public void deleteRecipeById(@PathVariable Long id) {
+        recipes.deleteById(id);
+    }
 
 
 }
