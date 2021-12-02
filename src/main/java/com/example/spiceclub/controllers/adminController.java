@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class adminController {
 
-
+    @Autowired
+    RecipeRepository recipes;
     @Autowired
     SpiceRepository spices;
-    RecipeRepository recipes;
 
 
     @GetMapping("/spices")
@@ -67,17 +67,17 @@ public class adminController {
     }
 
     @GetMapping("/recipes")
-    Iterable<Recipe> getRecipe(){
+    public Iterable<Recipe> getRecipe(){
         return recipes.findAll();
     }
 
     @GetMapping("/recipes/{id}")
-    private Recipe getRecipe(@PathVariable Long id){
+    public Recipe getRecipe(@PathVariable Long id){
         return recipes.findById(id).get();
     }
 
     @PostMapping("/recipes")
-    private Recipe addRecipe(@RequestBody Recipe newRecipe){
+    public Recipe addRecipe(@RequestBody Recipe newRecipe){
         return recipes.save(newRecipe);
     }
 
@@ -106,10 +106,11 @@ public class adminController {
     }
 
 
-    @DeleteMapping("/recipies/{id}")
+    @DeleteMapping("/recipes/{id}")
     public void deleteRecipeById(@PathVariable Long id) {
         recipes.deleteById(id);
     }
+
 
 
 }
