@@ -20,7 +20,7 @@ public class SuperAdmin {
     @Column
     private String password;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "SuperAdmin")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "superAdmin")
     private List<Admin> admins;
 
 }

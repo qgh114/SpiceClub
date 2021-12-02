@@ -30,5 +30,5 @@ public class Admin {
     List<S3_Bucket> S3_Images;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private SuperAdmin SuperAdmin;
+    private SuperAdmin superAdmin;
 }
