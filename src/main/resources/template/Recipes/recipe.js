@@ -1,4 +1,4 @@
-const tbodyElement = document.getElementById("recipe-tbody");
+const tbodyElement = document.getElementById("create-recipe-list");
 
 fetch(baseURL+"/recipes")
     .then(response => response.json())
@@ -10,8 +10,9 @@ fetch(baseURL+"/recipes")
 function createTable(recipe) {
     const cardElement = document.createElement("tr");
     cardElement.innerHTML = `
-        <td>${escapeHTML(recipe.name)}</td>
-        <td>${recipe.image}</td>
+        <p>${escapeHTML(recipe.name)}</p>
+        <img src="${( recipe.image.toString()+
+        recipe.image.full)}" width="110">
    
     `;
 
