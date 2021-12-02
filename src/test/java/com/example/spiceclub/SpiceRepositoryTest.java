@@ -1,8 +1,12 @@
 package com.example.spiceclub;
 
 
+import com.example.spiceclub.models.Admin;
+import com.example.spiceclub.models.Recipe;
 import com.example.spiceclub.models.Spice;
+import com.example.spiceclub.repositories.AdminRepository;
 import com.example.spiceclub.repositories.SpiceRepository;
+import com.example.spiceclub.repositories.SuperAdminRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +25,7 @@ public class SpiceRepositoryTest {
     @Autowired
     private SpiceRepository spices;
 
+
     @Test
     public void testCreateSpice() {
 
@@ -29,16 +34,16 @@ public class SpiceRepositoryTest {
         spice.setDescription("This is the cinnamon spice");
         spice.setImage("https://helsenyt.com/wp-content/uploads/2020/10/helsenyt_1216153735.jpg");
         spice.setName("Cinnamon");
+        spices.save(spice);
 
         Spice savedspice = spices.save(spice);
         Assertions.assertNotEquals(savedspice, null);
-
 
     }
 
     @Test
     public void testUpdateSpice() {
-        Long spiceId = Long.valueOf(2);
+        Long spiceId = 1L;
 
         Optional<Spice> optionalSpice = spices.findById(spiceId);
         Spice spice = optionalSpice.get();
@@ -53,7 +58,7 @@ public class SpiceRepositoryTest {
 
     @Test
     public void testReadSpice() {
-        Long spiceId = Long.valueOf(2);
+        Long spiceId = 1L;
 
         Optional<Spice> optionalSpice = spices.findById(spiceId);
         Assertions.assertTrue(optionalSpice.isPresent());
@@ -62,17 +67,8 @@ public class SpiceRepositoryTest {
 
     @Test
     public void testDeleteSpice() {
-        // vi laver lige nyt spice objekt i databasen MED ID 4! for så derefter slette spice objekt med ID 4.
-        Spice spice = new Spice();
-        spice.setId(4L);
-        spice.setPrice(100);
-        spice.setDescription("This is the pepper spice");
-        spice.setImage("https://helsenyt.com/wp-content/uploads/2020/10/helsenyt_1216153735.jpg");
-        spice.setName("Pepper");
-        spices.save(spice);
 
-        //nu sletter vi
-        Long spiceId = Long.valueOf(4);
+        Long spiceId = 1L;
         spices.deleteById(spiceId);
 
         Optional<Spice> optionalSpice = spices.findById(spiceId);
