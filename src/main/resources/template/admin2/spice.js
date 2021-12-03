@@ -3,6 +3,7 @@ const spiceTableBody = document.getElementById("spice-tbody");
 fetch("http://localhost:8080/spices")
     .then(response => response.json())
     .then(data => {
+        console.log(data)
         data.map(createSpicesTableRow);
     });
 
@@ -19,9 +20,9 @@ function constructSpiceTableRow(spiceTableRow, spice){
         <td>
                 <p class="row-spice-name">${escapeHTML(spice.name)}</p>
         </td>
-        
+       
         <td>
-                <button id="update-button-${spice.id}">Opdater krydderi</button>            
+                <button id="update-button-${spice.id}" onclick"">Opdater krydderi</button>            
         </td>  
         
         <td>

@@ -1,4 +1,4 @@
-function deleteSpice(spiceId) {
+    function deleteSpice(spiceId) {
     fetch("http://localhost:8080/spices/" + spiceId, {
         method: "DELETE"
     }).then(response => {

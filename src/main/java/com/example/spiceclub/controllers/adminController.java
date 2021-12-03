@@ -61,7 +61,7 @@ public class adminController {
         }
     }
 
-    @DeleteMapping("/spice/{id}")
+    @DeleteMapping("/spices/{id}")
     public void deleteSpicesById(@PathVariable Long id) {
         spices.deleteById(id);
     }
