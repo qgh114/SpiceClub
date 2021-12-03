@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="../global/global.css">
+    <link rel=stylesheet href="./spice.css">
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="admin-nav">
+    <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
+    <a href="../admin/recipes.html">Opskrifter</a>
+    <a href="../admin2/spice.html">Krydderier</a>
+    <a href="/">Statistik</a>
+    <a href="/">Blog</a>
+    <a href="/">Bestillinger</a>
+</nav>
+
+
+
+
+<h2>Tilføj et krydderi</h2>
+<div id="recipe">
+
+    <label>Navn</label>
+    <br>
+    <input id="create-spice-name" placeholder="Indtast navnet på krydderiet">
+    <br><br>
+    <label>Beskrivelse</label>
+    <br>
+    <input id="create-spice-description" placeholder="Indtast beskrivelsen af krydderiet">
+    <br><br>
+    <label>Pris</label>
+    <br>
+    <input id="create-spice-price" placeholder="Indtast prisen på krydderiet">
+    <br><br>
+    <label>Billede</label>
+    <br>
+    <input id="create-spice-image" placeholder="Indsæt billed til krydderiet">
+    <br> <br>
+    <button onclick="createSpice(); myhref()" >+</button>
+
+    <script>
+        function myhref() {
+            location.assign('spice.html');
+        }
+    </script>
+    <br>
+
+</div>
+
+<script src="createSpice.js"></script>
+<script src="./spice.js"></script>
+<script src="../global/global.js"></script>
+
+
+</body>
+</html>

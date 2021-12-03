@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel=stylesheet href="../global/global.css">
+
+  <title>Krydderier</title>
+</head>
+<body>
+<nav class="admin-nav">
+  <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
+  <a href="../admin/recipes.html">Opskrifter</a>
+  <a href="../admin2/spice.html">Krydderier</a>
+  <a href="/">Statistik</a>
+  <a href="/">Blog</a>
+  <a href="/">Bestillinger</a>
+</nav>
+
+<h2> Velkommen til dit overblik over alle dine online krydderier </h2>
+
+
+<h2><button onclick="goToCreateSpice()">Tryk her for at tilføje et nyt krydderi</button> </h2>
+
+<h4>Nedenfor ses alle online krydderier</h4>
+
+<table>
+  <thead>
+  <tr>
+
+  </tr>
+  </thead>
+  <tbody id="spice-tbody"></tbody>
+</table>
+
+
+
+<script>
+  function goToCreateSpice(){
+    location.assign('createSpice.html');
+  }
+</script>
+
+<script src="../lib/escapeHTML.js"></script>
+<script src="./spice.js"></script>
+<script src="../global/global.js"></script>
+<script src="./spiceDelete.js"></script>
+</body>
+</html>
