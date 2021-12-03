@@ -66,6 +66,8 @@ public class adminController {
         spices.deleteById(id);
     }
 
+
+
     @GetMapping("/recipes")
     public Iterable<Recipe> getRecipe(){
         return recipes.findAll();

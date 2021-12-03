@@ -11,8 +11,8 @@ function createTable(recipe) {
     const cardElement = document.createElement("tr");
     cardElement.innerHTML = `
         <p>${escapeHTML(recipe.name)}</p>
-        <img src="${( recipe.image.toString()+
-        recipe.image.full)}" width="110">
+        <img src="${recipe.image.toString()+
+        recipe.image.full}" width="110">
    
     `;
 

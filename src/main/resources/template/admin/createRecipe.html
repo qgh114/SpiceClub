@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="../global/global.css">
+    <link rel=stylesheet href="./recipe.css">
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="admin-nav">
+    <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
+    <a href="../admin/recipes.html">Opskrifter</a>
+    <a href="/">Krydderier</a>
+    <a href="/">Statestik</a>
+    <a href="/">Blog</a>
+    <a href="/">Bestillinger</a>
+</nav>
+
+
+
+
+<h2>Tilføj en opskrift</h2>
+<div id="recipe">
+
+    <label>Navn</label>
+    <br>
+    <input id="create-recipe-name" placeholder="Indtast navnet på opskriften">
+    <br><br>
+    <label>Fremgangsmåde</label>
+    <br>
+    <input id="create-recipe-recipeMethod" placeholder="Indtast fremgangsmåde">
+    <br><br>
+    <label>Ingredienser</label>
+    <br>
+    <input id="create-recipe-ingredient" placeholder="Indtast ingredienser">
+    <br><br>
+    <label>Billede</label>
+    <br>
+    <input id="create-recipe-image" placeholder="Indsæt billed til opskriften">
+    <br><br>
+    <label>Beskrivelse</label>
+    <br>
+    <input id="create-recipe-description" placeholder="Indtast en beskrivelse af opskriften">
+    <br> <br>
+    <button onclick="createRecipe(); myhref()" >+</button>
+
+    <script>
+        function myhref() {
+            location.assign('recipes.html');
+        }
+    </script>
+    <br>
+
+</div>
+
+<script src="createRecipe.js"></script>
+<script src="./recipes.js"></script>
+<script src="../global/global.js"></script>
+
+
+</body>
+</html>

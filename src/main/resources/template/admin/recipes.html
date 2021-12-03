@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="../global/global.css">
+
+    <title>Opskrifter</title>
+</head>
+<body>
+<nav class="admin-nav">
+    <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
+    <a href="../admin/recipes.html">Opskrifter</a>
+    <a href="/">Krydderier</a>
+    <a href="/">Statestik</a>
+    <a href="/">Blog</a>
+    <a href="/">Bestillinger</a>
+</nav>
+
+<h2> Velkommen til dit overblik over alle dine online opskrifter </h2>
+
+
+<h2><button onclick="goToCreateRecipe()">Tryk her for at tilføje en ny opskrift</button> </h2>
+
+<h4>Nedenfor ses alle online opskrifter</h4>
+
+<table>
+    <thead>
+        <tr>
+
+        </tr>
+    </thead>
+    <tbody id="recipe-tbody"></tbody>
+</table>
+
+
+
+<script>
+    function goToCreateRecipe(){
+        location.assign('createRecipe.html');
+    }
+</script>
+
+<script src="../lib/escapeHTML.js"></script>
+<script src="./recipes.js"></script>
+<script src="../global/global.js"></script>
+<script src="./recipeUpdateDelete.js"></script>
+</body>
+</html>
