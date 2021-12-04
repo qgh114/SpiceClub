@@ -6,7 +6,7 @@ const spiceId = URLParams.get("spiceId");
 const spiceBody = document.getElementById("spice-wrapper");
 
 <!-- SPECIFIK ID HUSK DET VI SKAL LAVE DETTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTE ID-->
-fetch(baseURL + "/spices/47")
+fetch(baseURL + "/spices/50")
     .then(response => response.json())
     .then(spice => {
         (createSpiceRow(spice));
