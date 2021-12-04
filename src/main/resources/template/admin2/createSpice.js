@@ -1,3 +1,6 @@
+const createSpiceButton = document.getElementById('create-spice-button')
+
+
 function createSpice(){
     const spiceToCreate = {
         name:document.getElementById("create-spice-name").value,
@@ -14,3 +17,12 @@ function createSpice(){
         .then(response => response.json())
         .catch(error => console.log(error));
 }
+
+function myhref() {
+    location.assign('./createSpice.html');
+}
+
+function myhref2() {
+    location.assign('spice.html');
+}
+

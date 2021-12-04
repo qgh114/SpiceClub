@@ -9,7 +9,7 @@
 <body>
 
 <nav class="admin-nav">
-    <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
+    <a style="float:left" href="../frontpage/frontpage.html"><img alt=" " width="30px" height="30px" src="https://icon-library.com/images/movie-icon/movie-icon-26.jpg"/> </a>
     <a href="../admin/recipes.html">Opskrifter</a>
     <a href="../admin2/spice.html">Krydderier</a>
     <a href="/">Statistik</a>
@@ -17,11 +17,9 @@
     <a href="/">Bestillinger</a>
 </nav>
 
-
-
-
 <h2>Tilføj et krydderi</h2>
-<div id="recipe">
+
+<div id="spice">
 
     <label>Navn</label>
     <br>
@@ -29,7 +27,7 @@
     <br><br>
     <label>Beskrivelse</label>
     <br>
-    <input id="create-spice-description" placeholder="Indtast beskrivelsen af krydderiet">
+    <textarea id="create-spice-description" placeholder="Indtast beskrivelsen af krydderiet"></textarea>
     <br><br>
     <label>Pris</label>
     <br>
@@ -37,22 +35,16 @@
     <br><br>
     <label>Billede</label>
     <br>
-    <input id="create-spice-image" placeholder="Indsæt billed til krydderiet">
+    <input  type="file" id="create-spice-image" placeholder="Indsæt billed til krydderiet" name="image-name">
     <br> <br>
-    <button onclick="createSpice(); myhref()" >+</button>
-
-    <script>
-        function myhref() {
-            location.assign('spice.html');
-        }
-    </script>
-    <br>
+    <button id="button-plus" onclick="createSpice(); myhref2()">+</button>
 
 </div>
 
-<script src="createSpice.js"></script>
 
+<script src="createSpice.js"></script>
 <script src="../global/global.js"></script>
+
 
 
 </body>

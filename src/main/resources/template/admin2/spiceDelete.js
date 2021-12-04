@@ -9,3 +9,8 @@
         }
     });
 }
+
+    function myhref2() {
+        location.assign('spice.html');
+    }
+

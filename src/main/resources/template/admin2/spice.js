@@ -15,19 +15,32 @@ function createSpicesTableRow(spice){
     constructSpiceTableRow(spiceTableRow, spice);
 }
 
-function constructSpiceTableRow(spiceTableRow, spice){
+function constructSpiceTableRow(spiceTableRow, spice) {
     spiceTableRow.innerHTML = `
-        <td>
-                <p class="row-spice-name">${escapeHTML(spice.name)}</p>
-        </td>
-       
-        <td>
-                <button id="update-button-${spice.id}" onclick"">Opdater krydderi</button>            
-        </td>  
-        
-        <td>
-                <button onclick="deleteSpice(${spice.id})">❌</button>            
-        </td>  
+      
+   
+    <td id="spice-name">${escapeHTML(spice.name)}</td>
+    
+    <td><button id="expand-spice-"${spice.id} onclick="myhref3()">🖊️</button></td>
         
     `;
+
+
+
 }
+function myhref3() {
+    location.assign('./updateSpice.html')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,112 @@
+/* spice.html CSS*/
+h1{
+
+    text-align: center;
+}
+
+#add-spice {
+   padding-left: 100px;
+    margin-right: 0;
+
+}
+
+/*table*/
+#spiceList {
+    border-collapse: collapse;
+    width: 60%;
+    margin:auto;
+    table-layout:fixed;
+
+
+}
+
+
+#spiceList td, #spiceList th {
+    padding: 8px;
+
+}
+
+
+#spiceList tr:nth-child(even){background-color: #f2f2f2;}
+
+#spiceList tr:hover {background-color: #ddd;}
+
+#spiceList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+
+#spice-wrapper{
+    background-color: red;
+}
+
+/*createSpice.html css */
+h2 {
+
+    text-align: center;
+}
+
+#spice {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#create-spice-price {
+     height:20px;
+     width: 200px;
+
+ }
+#create-spice-name {
+    height:20px;
+    width: 200px;
+
+}
+
+#create-spice-description {
+    height:200px;
+    width: 200px;
+
+}
+
+#create-spice-image {
+    height:20px;
+    width: 200px;
+
+}
+
+#spice-update-name {
+    height:20px;
+    width: 200px;
+
+}
+
+#button-plus {
+    /*rykke button til højre */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 #spice {
     padding-left: 500px;
 }
 
 h2{
     padding-left: 500px;
-}
+}*/

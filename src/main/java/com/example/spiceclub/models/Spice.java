@@ -16,14 +16,15 @@ public class Spice {
     @Column(unique = true)
     private String name;
 
-    @Column
-    private String image;
 
-    @Column
+    @Column(length = 9000)
     private String description;
 
    @Column
    private int price;
+
+    @Column
+    private String image;
 
    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Admin admin;
