@@ -24,22 +24,24 @@ function createSpiceRow(spice) {
 
 function constructSpiceRow(spiceRow, spice) {
     spiceRow.innerHTML = `
-
-   <p id="spice-name"> Navn: ${(spice.name)}</p>
+   <h1> Detaljer af ${(spice.name)}</h1>
+   
+   <!--<p id="spice-name"> Navn: ${(spice.name)}</p>-->
    <br>
    <p id="spice-description"> Beskrivelse: ${(spice.description)}</p>
    <br>
    <p id="spice-price">Pris: ${(spice.price)} kr</p>
    <br>
-   <p><img id="spice-image" src="${(spice.image)}">Billede</p>
+   <p><img id="spice-image" src="${(spice.image)}">Billede: virker ikke endnu</p>
    <br>
-    <button id="update-button-${spice.id}">Redigere</button>
-    <button onclick="deleteSpice(${spice.id}); myhref2()">x</button>
+    <button id="update-button-${spice.id}">Redigere</button> 
+    <button onclick="deleteSpice(${spice.id}); myhref2()">❌</button>
    
             `;
 
     document.getElementById(`update-button-${spice.id}`)
         .addEventListener("click", () => {updateSpice(spice)
+
 
 
         });
@@ -49,12 +51,19 @@ function updateSpice(spice) {
     const tableRowToUpdate = document.getElementById(spice.id);
 
     tableRowToUpdate.innerHTML = `
-           <input id="update-spice-name-${spice.id}" value="${escapeHTML(spice.name)}">
-            <textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea>
-            <input type="number" id="update-spice-price-${spice.id}" value="${(escapeHTML(spice.price.toString()))}">
-            <input type="file" id="update-spice-image-${spice.id}" value="${(spice.image)}">
-           <button onclick="updateSpiceBackend(${spice.id})">✅</button>
+            <h1>Redigere</h1>
+            <br> 
            
+            <label>Navn: </label>
+           <br><input id="update-spice-name-${spice.id}" value="${escapeHTML(spice.name)}"><br>
+           <br><label>Beskrivelse: </label>
+            <br><textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea><br>
+            <br><label>Pris </label>
+            <br><input type="number" id="update-spice-price-${spice.id}" value="${(escapeHTML(spice.price.toString()))}"><br>
+            <br><label>Billede: </label>
+            <br><input type="file" id="update-spice-image-${spice.id}" value="${(spice.image)}"><br>
+           <br> <button onclick="updateSpiceBackend(${spice.id})">✅</button><br>
+          
             `;
 }
 
