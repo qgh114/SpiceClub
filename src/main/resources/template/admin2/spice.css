@@ -43,9 +43,7 @@ h1{
     color: white;
 }
 
-#spice-wrapper{
-    background-color: red;
-}
+
 
 /*createSpice.html css */
 h2 {
@@ -93,6 +91,9 @@ h2 {
 }
 
 
+#spice-description{
+    background-color: green;
+}
 
 
 

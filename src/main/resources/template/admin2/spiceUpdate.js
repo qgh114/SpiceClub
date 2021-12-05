@@ -5,8 +5,7 @@ const spiceId = URLParams.get("spiceId");
 
 const spiceBody = document.getElementById("spice-wrapper");
 
-<!-- SPECIFIK ID HUSK DET VI SKAL LAVE DETTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTE ID-->
-fetch(baseURL + "/spices/50")
+fetch(baseURL + "/spices/"+ spiceId)
     .then(response => response.json())
     .then(spice => {
         (createSpiceRow(spice));
@@ -15,7 +14,7 @@ fetch(baseURL + "/spices/50")
 
 function createSpiceRow(spice) {
     console.log("here i am in createOwnerRow")
-    const spiceRow = document.createElement("label");
+    const spiceRow = document.createElement("div");
     spiceRow.id = spice.id;
 
 
@@ -28,7 +27,7 @@ function constructSpiceRow(spiceRow, spice) {
 
    <p id="spice-name"> Navn: ${escapeHTML(spice.name)}</p>
    <p id="spice-description"> Beskrivelse: ${escapeHTML(spice.description)}</p>
-   <p id="spice-price">Pris: ${(spice.price)} kr</p>
+   <p id="spice-price">Pris: ${escapeHTML(spice.price.toString())} kr</p>
    <p><img id="spice-image" src="${(spice.image)}"></p>
     <button id="update-button-${spice.id}">Redigere</button>
     <button onclick="deleteSpice(${spice.id}); myhref2()">x</button>

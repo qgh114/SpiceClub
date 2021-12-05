@@ -19,17 +19,22 @@ function constructSpiceTableRow(spiceTableRow, spice) {
     spiceTableRow.innerHTML = `
       
    
-    <td id="spice-name">${escapeHTML(spice.name)}</td>
+    <td id="spice-name">${(spice.name)}</td>
     
-    <td><button id="expand-spice-"${spice.id} onclick="myhref3()">🖊️</button></td>
+    <td><button id="expand-spice-"${spice.id} onclick="myhref3(${spice.id})">🖊️</button></td>
         
     `;
 
 
 
 }
-function myhref3() {
-    location.assign('./updateSpice.html')
+function myhref3(spiceId) {
+    location.assign('./updateSpice.html?spiceId='+ spiceId)
+
+    //spiceId som står inde i url er vores jquery string dvs. som vist forneden. + spiceId er faktisk spice.id
+    //const queryString = window.location.search;
+    // const URLParams = new URLSearchParams(queryString);
+    // const spiceId = URLParams.get("spiceId");
 }
 
 
