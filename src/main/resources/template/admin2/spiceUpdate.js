@@ -25,10 +25,14 @@ function createSpiceRow(spice) {
 function constructSpiceRow(spiceRow, spice) {
     spiceRow.innerHTML = `
 
-   <p id="spice-name"> Navn: ${escapeHTML(spice.name)}</p>
-   <p id="spice-description"> Beskrivelse: ${escapeHTML(spice.description)}</p>
-   <p id="spice-price">Pris: ${escapeHTML(spice.price.toString())} kr</p>
-   <p><img id="spice-image" src="${(spice.image)}"></p>
+   <p id="spice-name"> Navn: ${(spice.name)}</p>
+   <br>
+   <p id="spice-description"> Beskrivelse: ${(spice.description)}</p>
+   <br>
+   <p id="spice-price">Pris: ${(spice.price)} kr</p>
+   <br>
+   <p><img id="spice-image" src="${(spice.image)}">Billede</p>
+   <br>
     <button id="update-button-${spice.id}">Redigere</button>
     <button onclick="deleteSpice(${spice.id}); myhref2()">x</button>
    
@@ -40,14 +44,14 @@ function constructSpiceRow(spiceRow, spice) {
 
         });
 }
-
+/* /!*"${(escapeHTML(spice.price.toString()))}" man kan kun fungere hvis du gøre det igennem spice.html. og ikke spiceupdate.html*!/*/
 function updateSpice(spice) {
     const tableRowToUpdate = document.getElementById(spice.id);
 
     tableRowToUpdate.innerHTML = `
            <input id="update-spice-name-${spice.id}" value="${escapeHTML(spice.name)}">
             <textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea>
-            <input type="number" id="update-spice-price-${spice.id}" value="${(spice.price)}">
+            <input type="number" id="update-spice-price-${spice.id}" value="${(escapeHTML(spice.price.toString()))}">
             <input type="file" id="update-spice-image-${spice.id}" value="${(spice.image)}">
            <button onclick="updateSpiceBackend(${spice.id})">✅</button>
            
