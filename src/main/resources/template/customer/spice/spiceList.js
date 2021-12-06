@@ -24,7 +24,7 @@ function createSpice (spice) {
     </div>
     <div class="product-footer">
         <h3>${(spice.name)}</h3>
-        <h4 class="price">${(spice.price)}</h4>
+        <h4 class="price">${(spice.price)} kr</h4>
     </div>
 </div>
     

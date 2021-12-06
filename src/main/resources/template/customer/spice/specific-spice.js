@@ -36,7 +36,7 @@ function createSpecificSpice (spice) {
       </div>
     </div>
     <div class="right">
-      <span>Home/T-shirt</span>
+      <br><br>
       <h1>Boy’s T-Shirt By Handsome</h1>
       <div class="price">$50</div>
       <form class="form">
