@@ -35,7 +35,7 @@ function constructSpiceRow(spiceRow, spice) {
    <p><img id="spice-image" src="${(spice.image)}">Billede: virker ikke endnu</p>
    <br>
     <button id="update-button-${spice.id}">Redigere</button> 
-    <button onclick="deleteSpice(${spice.id}); myhref2()">❌</button>
+    <button onclick="myhref2(${spice.id})">❌</button>
    
             `;
 
