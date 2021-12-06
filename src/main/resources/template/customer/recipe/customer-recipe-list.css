@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    justify-content: flex-start;
+}
+.recipe-name {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+.recipe-desc {
+    font-size: 20px;
+    text-align: center;
+}
+.recipe-img {
+    text-align: center;
+    align-items: center;
+}
+.recipe-method {
+    text-align: center;
+}
