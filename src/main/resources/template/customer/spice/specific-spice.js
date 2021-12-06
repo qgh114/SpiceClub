@@ -4,13 +4,13 @@ const spiceId = URLParams.get("spiceId");
 
 const tBodyDetails = document.getElementById("spice-details")
 
-fetch(baseURL+"/spices")
+fetch(baseURL+"/spices/" + spiceId)
     .then(response => response.json())
     .then(spices => {
         (createSpecificSpice(spices));
     });
 
-function createSpecificSpice () {
+function createSpecificSpice (spice) {
     const spiceElement = document.createElement("div");
     spiceElement.innerHTML = `
     <!-- Product Details -->
@@ -18,20 +18,20 @@ function createSpecificSpice () {
   <div class="details container-md">
     <div class="left">
       <div class="main">
-        <img src="./images/pic1.jpg" alt="">
+        <img src="${(spice.image)}" alt="">
       </div>
       <div class="thumbnails">
         <div class="thumbnail">
-          <img src="./images/pic1.jpg" alt="">
+          <img src="${(spice.image)}" alt="">
         </div>
         <div class="thumbnail">
-          <img src="./images/pic2.jpg" alt="">
+          <img src="${(spice.image)}" alt="">
         </div>
         <div class="thumbnail">
-          <img src="./images/pic3.jpg" alt="">
+          <img src="${(spice.image)}" alt="">
         </div>
         <div class="thumbnail">
-          <img src="./images/pic4.jpg" alt="">
+          <img src="${(spice.image)}" alt="">
         </div>
       </div>
     </div>

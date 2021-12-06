@@ -1,5 +1,6 @@
 const tbodyElement = document.getElementById("customer-spice-list");
 
+
 fetch(baseURL+"/spices")
     .then(response => response.json())
     .then(spices => {
@@ -12,7 +13,7 @@ function createSpice (spice) {
     <div class="product-center container">
     <div class="product">
     <div class="product-header">
-        <a href="specific-spice.html">
+        <a href="specific-spice.html?spiceId=${spice.id}">
         <img src="${(spice.image)}" alt=""><a/>
        
 
