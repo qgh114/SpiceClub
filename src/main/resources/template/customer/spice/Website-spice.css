@@ -230,14 +230,10 @@ li {
 }
 
 
-
 /* Adverts */
 .section {
     padding: 10rem 0 5rem 0;
 }
-
-
-
 
 
 /* Product */
@@ -250,7 +246,6 @@ li {
 .product {
     height: 48rem;
     background-color: #fff;
-
     border-radius: 1rem;
     text-align: center;
     transition: all 300ms ease-in-out;
@@ -263,13 +258,14 @@ li {
 .product-header {
     position: relative;
     height: 35rem;
-    background-color: #f6f2f1;
+    background-color: #fff;
     transition: all 300ms ease-in-out;
     z-index: 0;
 }
 
 .product-header img {
     height: 100%;
+    width: 350px;
 }
 
 .product-footer {
@@ -331,26 +327,10 @@ li {
     color: #fff;
 }
 
-.product:hover .icons {
+.product .icons {
     opacity: 1;
     transform: translate(0, -50%) scale(1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Brands */
 .brands-center {
