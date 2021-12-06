@@ -12,7 +12,9 @@ function createSpice (spice) {
     <div class="product-center container">
     <div class="product">
     <div class="product-header">
-       <a> <img src="${(spice.image)}" alt=""></a>
+        <a href="specific-spice.html">
+        <img src="${(spice.image)}" alt=""><a/>
+       
 
             <ul class="icons">
                 <span><i class="bx bx-heart"></i></span>
