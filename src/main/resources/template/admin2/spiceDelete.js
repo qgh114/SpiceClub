@@ -10,13 +10,11 @@
     });
 }
 
-    function myhref2() {
-       /* if (!alert.block) {
-            alert.block = !confirm("er du sikker på du vil slette");
-            if (alert.block) {
-                setTimeout("alert.block = false;", 5000);
-            }
-        }*/
+    function myhref2(spiceId) {
+        if (confirm("Er du sikker på du vil slette?")) {
+            deleteSpice(spiceId);
+        }
+
         location.assign('spice.html');
     }
 

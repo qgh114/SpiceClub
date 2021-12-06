@@ -17,10 +17,10 @@ body {
 
 .nav li {
     display: inline-block;
-    margin-right: -4px;
-
+    margin-right: 20px;
+    margin-left: 50px;
     font-size: 1.5em;
-    padding: 1rem;
+    /*padding: -6rem;*/
 }
 
 .nav a {
@@ -36,6 +36,20 @@ body {
     color: white;
 }
 
+.nav ul .logo {
+    float:left;
+}
+.nav .krydderier {
+    float:right;
+
+}
+
+.nav .opskrifter{
+    float:right;
+}
+.nav ul{
+    height: 65px;
+}
 @media screen and (min-width: 600px) {
     .nav li {
         width: 120px;
@@ -52,9 +66,9 @@ body {
     margin-top: 3rem;
 }
 
-img {
+#spice-list img {
     height: 250px;
-    width: 250px;
+    width: 240px;
     /*border-radius: 120px;*/
 }
 

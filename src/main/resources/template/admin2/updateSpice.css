@@ -1,0 +1,48 @@
+
+
+#spice-wrapper {
+    text-align: center;
+    padding-top: 100px;
+}
+/*inde på siden hvor man kan redigere. præcis samme styling som inde på "tilføje krydderi""*/
+
+#spice-wrapper input[id^="update-spice-name-"]{
+    height:20px;
+    width: 200px;
+}
+#spice-wrapper textarea[id^="update-spice-description-"]{
+
+    height:200px;
+    width: 200px;
+
+}
+#spice-wrapper input[id^="update-spice-price-"]{
+    height:20px;
+    width: 200px;
+}
+
+#spice-wrapper input[id^="update-spice-price-"]{
+    height:20px;
+    width: 200px;
+}
+
+#spice-wrapper input[id^="update-spice-image-"]{
+    height:20px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
