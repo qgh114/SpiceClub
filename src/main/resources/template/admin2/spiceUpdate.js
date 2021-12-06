@@ -46,7 +46,7 @@ function constructSpiceRow(spiceRow, spice) {
 
         });
 }
-/* /!*"${(escapeHTML(spice.price.toString()))}" man kan kun fungere hvis du gøre det igennem spice.html. og ikke spiceupdate.html*!/*/
+
 function updateSpice(spice) {
     const tableRowToUpdate = document.getElementById(spice.id);
 
