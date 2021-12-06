@@ -16,20 +16,17 @@ function createRecipesTableRow(recipe){
 
 function constructRecipeTableRow(recipeTableRow, recipe){
     recipeTableRow.innerHTML = `
-        <td>
-                <p class="row-recipe-name">${escapeHTML(recipe.name)}</p>
-        </td>
-        
-        <td>
-                <button id="update-button-${recipe.id}">Updater opskrift</button>            
-        </td>  
-        
-        <td>
-                <button onclick="deleteRecipe(${recipe.id})">❌</button>            
-        </td>  
-             
-                 
-        
+   
+     <td id="recipe-name">${(recipe.name)}</td>
+    
+    <td><button id="expand-recipe-"${recipe.id} onclick="myhref3(${recipe.id})">🖊️</button></td>
         
     `;
+
 }
+
+function myhref3(recipeId) {
+    location.assign('./updateRecipe.html?recipeId='+ recipeId)
+
+}
+

@@ -1,7 +1,84 @@
-#recipe {
-    padding-left: 500px;
+
+h1{
+
+    text-align: center;
+}
+#add-recipe {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 140vh;
 }
 
-h2{
-    padding-left: 500px;
+/*table*/
+#recipeList {
+    border-collapse: collapse;
+    width: 60%;
+    margin:auto;
+    table-layout:fixed;
+
+
 }
+
+
+#recipeList td, #spiceList th {
+    padding: 8px;
+
+}
+
+
+#recipeList tr:nth-child(even){background-color: #f2f2f2;}
+
+#recipeList tr:hover {background-color: #ddd;}
+
+#recipeList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+
+
+/*createRecipe.html css */
+h2 {
+
+    text-align: center;
+}
+
+#recipe {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#create-recipe-name {
+    height:20px;
+    width: 200px;
+
+}
+
+
+#create-recipe-description {
+    height:200px;
+    width: 200px;
+
+}
+
+#create-recipe-recipeMethod {
+    height:200px;
+    width: 200px;
+
+}
+#create-recipe-image {
+    height:20px;
+    width: 200px;
+}
+
+
+#create-recipe-ingredient {
+    height:200px;
+    width: 200px;
+
+}
+

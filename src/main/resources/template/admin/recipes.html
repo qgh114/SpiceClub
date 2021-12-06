@@ -2,46 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet href="../global/global.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel=stylesheet href="../frontpage/frontpage.css">
 
     <title>Opskrifter</title>
 </head>
 <body>
-<nav class="admin-nav">
-    <a href="/../Recipes/recipe-list.html"><img alt=" " width="30px" height="30px" src=""/> </a>
-    <a href="../admin/recipes.html">Opskrifter</a>
-    <a href="../admin2/spice.html">Krydderier</a>
-    <a href="/">Statestik</a>
-    <a href="/">Blog</a>
-    <a href="/">Bestillinger</a>
+<nav class="navbar">
+    <h2><a href="../frontpage/frontpage.html">Dashboard</a></h2>
+    <h5> <a href="../admin/recipes.html">Opskrifter</a></h5>
+    <h5><a href="../admin2/spice.html">Krydderier</a></h5>
+    <h5>Statistik</h5>
+    <h5>Blog</h5>
+    <h5>Bestillinger</h5>
+    <div class="profile">
+        <span class="search-bar"></span>
+        <img class="profile-image" src="https://picsum.photos/200/200?random=1">
+        <p class="profile-name">Admin: </p>
+    </div>
 </nav>
 
-<h2> Velkommen til dit overblik over alle dine online opskrifter </h2>
 
+<h1>Liste med opskrifter</h1>
+<button id="add-recipe" onclick="goToCreateRecipe()" >Tilføje opskrift</button>
 
-<h2><button onclick="goToCreateRecipe()">Tryk her for at tilføje en ny opskrift</button> </h2>
-
-<h4>Nedenfor ses alle online opskrifter</h4>
-
-<table>
+<table id="recipeList">
     <thead>
-        <tr>
-
-        </tr>
+    <tr>
+        <th>Navn</th>
+        <th>Detaljer</th>
+    </tr>
     </thead>
     <tbody id="recipe-tbody"></tbody>
 </table>
 
 
-<script>
-    function goToCreateRecipe(){
-        location.assign('createRecipe.html');
-    }
-</script>
 
+
+
+<script src="./createRecipe.js"></script>
 <script src="../lib/escapeHTML.js"></script>
 <script src="./recipes.js"></script>
 <script src="../global/global.js"></script>
-<script src="./recipeUpdateDelete.js"></script>
+
 </body>
 </html>

@@ -3,8 +3,7 @@ const createRecipeForm = document.getElementById("recipe");
 function createRecipe(){
     const recipeToCreate = {
         name:document.getElementById("create-recipe-name").value,
-        recipeMethod:document.getElementById("create-recipe-recipeMethod").value,
-        recipeMethod:document.getElementById("create-recipe-recipeMethod").value,
+        recipe_method:document.getElementById("create-recipe-recipeMethod").value,
         ingredient:document.getElementById("create-recipe-ingredient").value,
         image:document.getElementById("create-recipe-image").value,
         description:document.getElementById("create-recipe-description").value
@@ -18,4 +17,14 @@ function createRecipe(){
     })
         .then(response => response.json())
         .catch(error => console.log(error));
+}
+
+
+
+function goToCreateRecipe(){
+    location.assign('createRecipe.html');
+}
+
+function myhref() {
+    location.assign('recipes.html');
 }

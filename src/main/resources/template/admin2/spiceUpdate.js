@@ -42,8 +42,6 @@ function constructSpiceRow(spiceRow, spice) {
     document.getElementById(`update-button-${spice.id}`)
         .addEventListener("click", () => {updateSpice(spice)
 
-
-
         });
 }
 
