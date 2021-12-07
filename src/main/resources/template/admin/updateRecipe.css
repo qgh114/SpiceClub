@@ -1,0 +1,48 @@
+
+
+#recipe-wrapper {
+    text-align: center;
+    padding-top: 50px;
+}
+/*inde på siden hvor man kan redigere. præcis samme styling som inde på "tilføje krydderi""*/
+
+#recipe-wrapper input[id^="update-recipe-name-"]{
+    height:20px;
+    width: 200px;
+}
+#recipe-wrapper textarea[id^="update-recipe-description-"]{
+
+    height:200px;
+    width: 200px;
+
+}
+#recipe-wrapper textarea[id^="update-recipe-recipeMethod-"]{
+    height:200px;
+    width: 200px;
+}
+
+#recipe-wrapper textarea[id^="update-recipe-ingredient-"]{
+    height:200px;
+    width: 200px;
+}
+
+#recipe-wrapper input[id^="update-recipe-image-"]{
+    height:20px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

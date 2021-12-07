@@ -1,8 +1,9 @@
-/*customer-spice-list.html */
+
+/* customer-spice.html*/
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background-color: rgb(228, 228, 228);
 }
 
@@ -59,57 +60,12 @@ body {
     }
 }
 
-#title {
+h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: 2.5rem;
     margin-top: 3rem;
 }
-
-#spice-list img {
-    height: 250px;
-    width: 240px;
-    /*border-radius: 120px;*/
-}
-
-#spice-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#spice-list div {
-    margin: 4rem;
-}
-
-#spice-list div button {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
-    background-color: white;
-    font-family: sans-serif;
-    font-size: 1rem;
-    border: none;
-}
-
-#spice-list div img:hover {
-    opacity: 70%;
-}
-
-#spice-list div button:hover {
-    transform: scale(1.2);
-}
-
-#spice-list .kurv,
-button,
-p {
-    margin: 0.5rem;
-    margin-left: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* customer-spice.html*/
 
 * {
     box-sizing: border-box;
@@ -126,6 +82,10 @@ img {
 .col figure img {
     height: 250px;
     width: 250px;
+}
+
+.col {
+    text-align: center;
 }
 
 .sectionwrapper {
