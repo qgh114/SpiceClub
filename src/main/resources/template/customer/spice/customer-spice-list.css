@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(228, 228, 228);
+}
+
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 1.5em;
+    /*padding: -6rem;*/
+}
+
+.nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s background-color;
+}
+
+.nav a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.nav ul .logo {
+    float:left;
+}
+.nav .krydderier {
+    float:right;
+
+}
+
+.nav .opskrifter{
+    float:right;
+}
+.nav ul{
+    height: 65px;
+}
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+}
+
+#title {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+
+
+
+div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    justify-content: space-between;
+    grid-gap: 20px;
+
+}
+
+.item {
+    height: 400px;
+    border: solid;
+    margin-bottom: 5rem;
+    margin-right: 1rem;
+
+}
+
+.item:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.container div {
+    margin: 4rem;
+}
+
+.container img {
+    height: 250px;
+    width: 265px;
+}
+
+.container .kurv button {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: none;
+}
+
+.container .kurv button:hover {
+    transform: scale(1.2);
+}
+
+.container .kurv,
+button,
+p {
+    margin: 0.5rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a {
+    text-decoration: none;
+    color: unset;
+}
