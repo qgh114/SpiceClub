@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -24,58 +24,28 @@ body {
     text-align: center;
 }
 
-#om .sectionwrapper {
+.sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-#om .col {
+.col {
     flex-grow: 1;
     flex-basis: 500px;
+    justify-content: space-between;
 }
 
 h1 {
     text-align: center;
 }
 
-h4 {
-    text-align: left;
-    font-weight: bolder;
-    font-size: 20px;
-    float: right;
-    margin-top: 0;
-    margin-right: 20em;
-    position: relative;
-    right: 12em;
-}
 
 h3{
+    justify-content: space-between;
     font-style: italic;
-    font-size: 35px;
+    font-size: 25px;
 }
 
-.recipe-desc {
-    position: relative;
-    float: right;
-    margin-right: 25em;
-    bottom: 11em;
-    right: 15em;
 
 
-}
 
-h6 {
-    float: right;
-    position: relative;
-    font-size: 20px;
-    bottom: 12em;
-    right: 10em;
-}
-
-.recipe-method{
-    float: right;
-    position: relative;
-    bottom: 12em;
-    right: 3em;
-
-}

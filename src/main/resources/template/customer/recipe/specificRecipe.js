@@ -2,7 +2,7 @@ const queryString = window.location.search;
 const URLParams = new URLSearchParams(queryString);
 const recipeId = URLParams.get("recipeId");
 
-const tbodyElement = document.getElementById("specific-recipe");
+const tbodyElement = document.getElementById("om-section");
  let results;
 fetch("http://localhost:8080/recipes/"+ recipeId)
     .then(response => response.json())
@@ -17,18 +17,30 @@ function createTable(recipe) {
     const cardElement = document.createElement("div");
     cardElement.innerHTML = `
         
-       
-      <div class="product-footer">
-        <h3 id>${(recipe.name)}</h3>
-        <img src="${recipe.image.toString()}" width="400px" alt="">
-        <h4>Beskrivelse</h4>
-        <p class="recipe-desc">${(recipe.description)}</p>
-        <h5>Ingredienser</h5>
-        <p>${(recipe.ingredient)}</p>
-        <h6>Fremgangsmåde</h6>
-        <p class="recipe-method">${(recipe.recipeMethod)}</p>
-      </div>
-    
+     <h1>${escapeHTML(recipe.name)}</h1>
+
+    <div class="sectionwrapper">
+
+        <div class="col">
+            <figure>
+                <img src="${recipe.image.toString()}" width="400" alt="">
+                <h3>Ingredienser</h3>
+                <p>${escapeHTML(recipe.ingredient)}</p>
+                <p>${escapeHTML(recipe.ingredient)}</p>
+                <p>${escapeHTML(recipe.ingredient)}</p>
+                <p>${escapeHTML(recipe.ingredient)}</p>
+            </figure>
+        </div>
+
+        <div class="col">
+            <h3>Hvad er ..... ?</h3>
+            <p>${escapeHTML(recipe.description)}
+            </p>
+
+            <h3>Fremgangsmåde</h3>
+            <p>${escapeHTML(recipe.recipeMethod)}</p>
+        </div>
+        </div>
     `;
 
     tbodyElement.appendChild(cardElement);
