@@ -16,16 +16,16 @@ public class Recipe {
     @Column(unique = true)
     private String name;
 
-    @Column
+    @Column(length = 9000)
     private String recipeMethod;
 
-    @Column
+    @Column(length = 9000)
     private String ingredient;
 
     @Column
     private String image;
 
-    @Column
+    @Column(length = 9000)
     private String description;
 
     @ManyToOne (fetch = FetchType.LAZY,cascade = CascadeType.ALL)

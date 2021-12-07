@@ -23,22 +23,22 @@ function createTable(recipe) {
 
         <div class="col">
             <figure>
-                <img src="${recipe.image.toString()}" width="400" alt="">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgranditaliacdnprodimages.azureedge.net%2Ffiles%2Fimported_images%2Frecipes%2F700%2F000000000000SPAGUETTI_01.jpg&f=1&nofb=1" width="400" alt="">
                 <h3>Ingredienser</h3>
-                <p>${escapeHTML(recipe.ingredient)}</p>
-                <p>${escapeHTML(recipe.ingredient)}</p>
-                <p>${escapeHTML(recipe.ingredient)}</p>
-                <p>${escapeHTML(recipe.ingredient)}</p>
+                <p>2 stk. løg</p>
+                <p></p>
+                <p>3 fed hvidløg</p>
+                <p>500 g. hakket oksekød</p>
             </figure>
         </div>
 
         <div class="col">
             <h3>Hvad er ..... ?</h3>
-            <p>${escapeHTML(recipe.description)}
+            <p>Nem opskrift på den italienske pastaret, Spaghetti Bolognese. De fleste danskere vil egentlig nok bare kalde den for pasta med kødsovs, men uanset navn, så er det en hverdagsfavorit. Det er nem aftensmad, som også kan gøres ganske sund. Man kan eksempelvis tilsætte en masse skjulte grøntsager til sovsen.
             </p>
 
             <h3>Fremgangsmåde</h3>
-            <p>${escapeHTML(recipe.recipeMethod)}</p>
+            <p>Kog pastaen, til den er perfekt mør med bid. Steg bacon på en pande ved middelhøj varme, til det er sprødt og stadig saftigt. Kom bacon på en tallerken med fedtsugende papir. Kom smør på panden med baconfedt og sauter løgene, til er bløde og klare</p>
         </div>
         </div>
     `;

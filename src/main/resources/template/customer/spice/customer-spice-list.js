@@ -14,7 +14,7 @@ function createSpice (spice) {
   <section class="container">
   <div class="item">
   <a href="customer-spice.html?spiceId=${spice.id}">
-    <img src="https://cdn-adl.gelatogroup.com/do/emK4BTSbyo0/listing_large-p1-dk-DK?v=1625047713">
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1">
         <p>${(spice.name)}</p>
         <p>${(spice.price)} kr ,-</p>
         
@@ -29,8 +29,6 @@ function createSpice (spice) {
       `;
 
     tbodyElement.appendChild(spiceElement);
-
-
 
 }
 

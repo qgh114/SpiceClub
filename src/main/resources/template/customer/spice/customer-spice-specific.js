@@ -21,7 +21,7 @@ function createSpecificSpice (spice) {
 
         <div class="col">
             <figure>
-                <img src="https://cdn-adl.gelatogroup.com/do/emK4BTSbyo0/listing_large-p1-dk-DK?v=1625047713" alt="">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" alt="">
                     <p>${(spice.name)}</p>
                     <p>${(spice.price)} kr ,</p>
                     <div class="kurv">
