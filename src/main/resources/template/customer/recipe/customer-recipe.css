@@ -4,16 +4,14 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
 }
 
-img {
-    width: 100%;
-}
 
-.col figure img {
-    height: 250px;
-    width: 250px;
+
+.img {
+    float: left;
+    clear: both;
 }
 
 .sectionwrapper {
@@ -38,4 +36,46 @@ img {
 
 h1 {
     text-align: center;
+}
+
+h4 {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 20px;
+    float: right;
+    margin-top: 0;
+    margin-right: 20em;
+    position: relative;
+    right: 12em;
+}
+
+h3{
+    font-style: italic;
+    font-size: 35px;
+}
+
+.recipe-desc {
+    position: relative;
+    float: right;
+    margin-right: 25em;
+    bottom: 11em;
+    right: 15em;
+
+
+}
+
+h6 {
+    float: right;
+    position: relative;
+    font-size: 20px;
+    bottom: 12em;
+    right: 10em;
+}
+
+.recipe-method{
+    float: right;
+    position: relative;
+    bottom: 12em;
+    right: 3em;
+
 }
