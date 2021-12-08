@@ -38,7 +38,11 @@ function createTable(recipe) {
             </p>
 
             <h3>Fremgangsmåde</h3>
-            <p>Kog pastaen, til den er perfekt mør med bid. Steg bacon på en pande ved middelhøj varme, til det er sprødt og stadig saftigt. Kom bacon på en tallerken med fedtsugende papir. Kom smør på panden med baconfedt og sauter løgene, til er bløde og klare</p>
+            <p>Kog pastaen, til den er perfekt mør med bid. 
+            Steg bacon på en pande ved middelhøj varme, til det er sprødt og stadig saftigt. 
+            Kom bacon på en tallerken med fedtsugende papir. 
+            Kom smør på panden med baconfedt og sauter løgene, til er bløde og klare</p>
+            
         </div>
         </div>
     `;

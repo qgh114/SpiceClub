@@ -1,7 +1,9 @@
 package com.example.spiceclub.controllers;
 
+import com.example.spiceclub.models.Admin;
 import com.example.spiceclub.models.Spice;
 import com.example.spiceclub.models.Recipe;
+import com.example.spiceclub.repositories.AdminRepository;
 import com.example.spiceclub.repositories.RecipeRepository;
 import com.example.spiceclub.repositories.SpiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,14 @@ public class adminController {
     @Autowired
     SpiceRepository spices;
 
+    @Autowired
+    AdminRepository admins;
+
+    @GetMapping("/admins/{id}")
+    public Admin getAdminById(@PathVariable Long id)
+    {
+        return admins.findById(id).get();
+    }
 
     @GetMapping("/spices")
     public Iterable<Spice> getSpices() {
