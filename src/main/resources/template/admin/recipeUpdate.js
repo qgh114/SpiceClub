@@ -31,7 +31,7 @@ function constructRecipeTableRow(recipeTableRow, recipe){
    <p id="recipe-recipeMethod"> Fremgangsmåde: ${(recipe.recipe_method)}</p>
    <br>
   
-   <p id="recipe-ingredient">Ingredienser: ${(recipe.ingredient)}</p>
+   <p id="recipe-ingredient"> Ingredienser: ${(recipe.ingredient)}</p>
    <br>
    <p><img id="recipe-image" src="${(recipe.image)}">Billede: virker ikke endnu</p>
    <br>
@@ -61,16 +61,16 @@ function updateRecipe(recipe) {
            <br><input id="update-recipe-name-${recipe.id}" value="${escapeHTML(recipe.name)}"><br>
            
            <br><label>Beskrivelse: </label>
-            <br><textarea id="update-recipe-description-${recipe.id}"${escapeHTML(recipe.description)}></textarea><br>
+            <br><textarea id="update-recipe-description-${recipe.id}">${escapeHTML(recipe.description)}</textarea><br>
             
             <br><label>Fremgangsmåde: </label>
-            <br><textarea id="update-recipe-recipeMethod-${recipe.id}"${escapeHTML(recipe.recipe_method)}></textarea><br>
+            <br><textarea id="update-recipe-recipeMethod-${recipe.id}">${escapeHTML(recipe.recipe_method)}</textarea><br>
             
             <br><label>Ingredienser: </label>
-            <br><textarea id="update-recipe-ingredient-${recipe.id}"${escapeHTML(recipe.ingredient)}></textarea><br>
+            <br><textarea id="update-recipe-ingredient-${recipe.id}">${escapeHTML(recipe.ingredient)}</textarea><br>
             
             <br><label>Billede: </label>
-            <br><input type="file" id="update-recipe-image-${recipe.id}" value="${(recipe.image)}"><br>
+            <br><input type="file" id="update-recipe-image-${recipe.id}"> "${(recipe.image)}"<br>
            
            <button onclick="updateRecipeBackend(${recipe.id})">✅</button><br>
           

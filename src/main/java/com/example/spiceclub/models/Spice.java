@@ -17,7 +17,7 @@ public class Spice {
     private String name;
 
 
-    @Column(length = 20000)
+    @Column(columnDefinition="TEXT")
     private String description;
 
    @Column

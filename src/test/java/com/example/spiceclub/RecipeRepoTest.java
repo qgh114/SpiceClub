@@ -24,7 +24,7 @@ public class RecipeRepoTest {
     public void testCreateRecipe() {
         Recipe recipe = new Recipe();
         recipe.setName("Spaghetti Bolo");
-        recipe.setRecipeMethod("boil water add pasta");
+        recipe.setRecipe_method("boil water add pasta");
         recipe.setImage("https://images.arla.com/recordid/74c3865a0e434b278cb1a6e500c5ac6f/spaghetti-bolognese.jpg?crop=(0,1468,0,-2276)&w=1200&h=630&scale=both&format=jpg&quality=80&ak=6826258c&hm=1f740233");
         recipe.setDescription("epic spaghetti");
 

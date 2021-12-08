@@ -54,7 +54,7 @@ function updateSpice(spice) {
            
             <label>Navn: </label>
            <br><input id="update-spice-name-${spice.id}" value="${escapeHTML(spice.name)}"><br>
-           <br><label>Beskrivelse: </label>
+           <br><label><b>Beskrivelse: </b></label>
             <br><textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea><br>
             <br><label>Pris </label>
             <br><input type="number" id="update-spice-price-${spice.id}" value="${(escapeHTML(spice.price.toString()))}"><br>

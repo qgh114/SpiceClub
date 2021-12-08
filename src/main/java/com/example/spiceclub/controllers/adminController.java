@@ -87,7 +87,7 @@ public class adminController {
     public String patchRecipeById(@PathVariable Long id, @RequestBody Recipe recipeToUpdateWith) {
         return recipes.findById(id).map(foundRecipe -> {
             if (recipeToUpdateWith.getName() != null) foundRecipe.setName(recipeToUpdateWith.getName());
-            if (recipeToUpdateWith.getRecipeMethod() != null) foundRecipe.setRecipeMethod(recipeToUpdateWith.getRecipeMethod());
+            if (recipeToUpdateWith.getRecipe_method() != null) foundRecipe.setRecipe_method(recipeToUpdateWith.getRecipe_method());
             if (recipeToUpdateWith.getIngredient() != null) foundRecipe.setIngredient(recipeToUpdateWith.getIngredient());
             if (recipeToUpdateWith.getImage() != null) foundRecipe.setImage(recipeToUpdateWith.getImage());
             if (recipeToUpdateWith.getDescription() != null) foundRecipe.setDescription(recipeToUpdateWith.getDescription());
