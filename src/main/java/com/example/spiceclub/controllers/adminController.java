@@ -20,11 +20,33 @@ public class adminController {
     @Autowired
     AdminRepository admins;
 
-    @GetMapping("/admins/{id}")
-    public Admin getAdminById(@PathVariable Long id)
-    {
-        return admins.findById(id).get();
+
+
+    @PostMapping("/admins")
+    public Admin findAdmin(@RequestBody Admin newAdmin) {
+
+       Admin admin = admins.findAdminByEmailAndPassword(newAdmin.getEmail(), newAdmin.getPassword());
+
+       if(admin == null) {
+           return newAdmin;
+       }
+
+
+
+       // Admin admin1 = admins.findAdminByEmail(newAdmin.getEmail());
+        //Admin adminId = admins.findByEmail(newAdmin.getEmail());
+
+        return admin;
+
     }
+
+
+
+
+
+
+
+
 
     @GetMapping("/spices")
     public Iterable<Spice> getSpices() {
