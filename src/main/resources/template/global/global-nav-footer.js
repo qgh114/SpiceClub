@@ -7,53 +7,14 @@ function getNavbar() {
     navElement.innerHTML = `
     
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="navigation container">
-            <div class="logo">
-                <h1>Spice Club</h1>
-            </div>
+    <section class="nav">
+        <ul>
+            <li class="logo"><a href="#">LOGO</a></li>
+            <li class="krydderier"><a href="customer-spice-list.html">Krydderier</a></li>
+            <li class="opskrifter"><a href="http://localhost:63342/SpiceClub/template/customer/recipe/recipe-list.html?_ijt=669m2l4evef258ocefh6hd8fdc&_ij_reload=RELOAD_ON_SAVE">Opskrifter</a></li>
 
-            <div class="menu">
-                <div class="top-nav">
-                    <div class="logo">
-                        <h1>Codevo</h1>
-                    </div>
-                    <div class="close">
-                        <i class="bx bx-x"></i>
-                    </div>
-                </div>
-
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="spice-list.html" class="nav-link">Krydderier</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Opskrifter</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                       <a href="#about" class="nav-link">About</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="#contact" class="nav-link">Contact</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="account.html" class="nav-link">Account</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
-                     </li>-->
-                </ul>
-            </div>
-
-            <a href="cart.html" class="cart-icon">
-                <i class="bx bx-shopping-bag"></i>
-            </a>
-
-            <div class="hamburger">
-                <i class="bx bx-menu"></i>
-            </div>
-        </div>
-    </nav>
+        </ul>
+    </section>
     `;
 
     tbodyNav.appendChild(navElement);
@@ -64,63 +25,26 @@ getFooter()
 function getFooter() {
     const footerElement = document.createElement("div");
     footerElement.innerHTML = `
-    <footer id="footer" class="section footer">
-  <div class="container">
-    <div class="footer-container">
-      <div class="footer-center">
-        <h3>EXTRAS</h3>
-        <a href="#">Brands</a>
-        <a href="#">Gift Certificates</a>
-        <a href="#">Affiliate</a>
-        <a href="#">Specials</a>
-        <a href="#">Site Map</a>
-      </div>
-      <div class="footer-center">
-        <h3>INFORMATION</h3>
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Site Map</a>
-      </div>
-      <div class="footer-center">
-        <h3>MY ACCOUNT</h3>
-        <a href="#">My Account</a>
-        <a href="#">Order History</a>
-        <a href="#">Wish List</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Returns</a>
-      </div>
-      <div class="footer-center">
-        <h3>CONTACT US</h3>
-        <div>
-                        <span>
-                            <i class="fas fa-map-marker-alt"></i>
-                        </span>
-          42 Dream House, Dreammy street, 7131 Dreamville, USA
-        </div>
-        <div>
-                        <span>
-                            <i class="far fa-envelope"></i>
-                        </span>
-          company@gmail.com
-        </div>
-        <div>
-                        <span>
-                            <i class="fas fa-phone"></i>
-                        </span>
-          456-456-4512
-        </div>
-        <div>
-                        <span>
-                            <i class="far fa-paper-plane"></i>
-                        </span>
-          Dream City, USA
-        </div>
-      </div>
-    </div>
+<footer class="social-footer">
+  <div class="social-footer-left">
+    <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
   </div>
   </div>
+  <div class="contact-info">
+  <a href="http://localhost:63342/SpiceClub/template/global/contactInfo.html?_ijt=ai2fd4s3sdtknr7v0jhms333ga">KONTAKT OS</a>
+  </div>
+  <div class="terms">
+  <a href="http://localhost:63342/SpiceClub/template/global/delivery.html?_ijt=v3iu0l400c3sctsjr28l18bo69">LEVERING</a>
+  </div>
+  <div class="delivery">
+  <a href="http://localhost:63342/SpiceClub/template/global/privacyPolicy.html?_ijt=t4koj8j2lbiq3gaj1qa9l2e9va">PRIVATPOLITIK</a>
+  </div>
+  <div class="social-footer-icons">
+    
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
 </footer>
     
     

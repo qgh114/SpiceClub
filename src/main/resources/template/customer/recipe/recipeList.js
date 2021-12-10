@@ -6,7 +6,7 @@ fetch("http://localhost:8080/recipes")
         result.map(recipe => createTable(recipe));
     });
 
-
+console.log("hej")
 function createTable(recipe) {
     const cardElement = document.createElement("div");
     cardElement.innerHTML = `

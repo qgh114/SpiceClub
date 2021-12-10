@@ -7,58 +7,6 @@ body {
     background-color: rgb(228, 228, 228);
 }
 
-.nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.nav li {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 50px;
-    font-size: 1.5em;
-    /*padding: -6rem;*/
-}
-
-.nav a {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: 0.3s background-color;
-}
-
-.nav a:hover {
-    background-color: grey;
-    color: white;
-}
-
-.nav ul .logo {
-    float:left;
-}
-.nav .krydderier {
-    float:right;
-
-}
-
-.nav .opskrifter{
-    float:right;
-}
-.nav ul{
-    height: 65px;
-}
-@media screen and (min-width: 600px) {
-    .nav li {
-        width: 120px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-    }
-}
 
 h1 {
     text-align: center;
