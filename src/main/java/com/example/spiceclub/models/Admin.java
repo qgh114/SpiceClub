@@ -27,8 +27,10 @@ public class Admin {
     List<Spice> spices;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "admin", cascade = CascadeType.ALL)
+    List<Blog> blogs;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "admin", cascade = CascadeType.ALL)
     List<S3_Bucket> S3_Images;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private SuperAdmin superAdmin;
+
 }

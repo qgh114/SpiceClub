@@ -28,7 +28,7 @@ function constructRecipeTableRow(recipeTableRow, recipe){
    <p id="recipe-description"> Beskrivelse: ${(recipe.description)}</p>
   <br>
   
-   <p id="recipe-recipeMethod"> Fremgangsmåde: ${(recipe.recipe_method)}</p>
+   <p id="editor"> Fremgangsmåde: ${(recipe.recipe_method)}</p>
    <br>
   
    <p id="recipe-ingredient"> Ingredienser: ${(recipe.ingredient)}</p>

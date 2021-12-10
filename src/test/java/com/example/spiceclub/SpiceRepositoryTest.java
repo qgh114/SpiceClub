@@ -1,12 +1,8 @@
 package com.example.spiceclub;
 
 
-import com.example.spiceclub.models.Admin;
-import com.example.spiceclub.models.Recipe;
 import com.example.spiceclub.models.Spice;
-import com.example.spiceclub.repositories.AdminRepository;
 import com.example.spiceclub.repositories.SpiceRepository;
-import com.example.spiceclub.repositories.SuperAdminRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

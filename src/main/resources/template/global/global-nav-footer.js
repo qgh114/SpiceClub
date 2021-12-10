@@ -11,7 +11,7 @@ function getNavbar() {
         <ul>
             <li class="logo"><a href="#">LOGO</a></li>
             <li class="krydderier"><a href="customer-spice-list.html">Krydderier</a></li>
-            <li class="opskrifter"><a href="http://localhost:63342/SpiceClub/template/customer/recipe/recipe-list.html?_ijt=669m2l4evef258ocefh6hd8fdc&_ij_reload=RELOAD_ON_SAVE">Opskrifter</a></li>
+            <li class="opskrifter"><a href="../customer/recipe/recipe-list.html">Opskrifter</a></li>
 
         </ul>
     </section>
