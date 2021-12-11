@@ -8,10 +8,13 @@ function createForm() {
 
 <div class="container">
     <h2>Log ind</h2>
-    <input id="get-username" type="text" placeholder="Username">
+    <label>Email: </label>
+    <br>
+    <input id="get-username" type="text" placeholder="Email">
         <br><br>
             <div class="input">
-                <input id="get-password" type="password" placeholder="Password" id="password-input">
+            <label>Adgangskode: </label><br>
+                <input id="get-password" type="password" placeholder="Adgangskode" id="password-input">
             </div>
             <br><br>
             <button id="loginBtn">Login</button>

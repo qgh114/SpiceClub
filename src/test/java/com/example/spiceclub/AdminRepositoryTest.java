@@ -16,7 +16,6 @@ import java.util.Optional;
 @Rollback(false)
 public class AdminRepositoryTest {
 
-    // altså superAdmin kan lave CRUD i Admin table
 
     @Autowired
     private AdminRepository admins;
@@ -34,6 +33,7 @@ public class AdminRepositoryTest {
 
     @Test
     public void testUpdateAdmin() {
+       //tjek din id i databasen og sæt den ind her i adminId
         Long adminId = 1L;
 
         Optional<Admin> optionalAdmin = admins.findById(adminId);
@@ -49,6 +49,7 @@ public class AdminRepositoryTest {
 
     @Test
     public void testReadAdmin() {
+        //tjek din id i databasen og sæt den ind her i adminId fra testUpdateAdmin metode
         Long adminId = 1L;
 
         Optional<Admin> optionalAdmin = admins.findById(adminId);
@@ -58,6 +59,7 @@ public class AdminRepositoryTest {
 
     @Test
     public void testDeleteAdmin() {
+        //tjek din id i databasen og sæt den ind her i adminId fra testUpdateAdmin metode
 
         Long adminId = 1L;
         admins.deleteById(adminId);
