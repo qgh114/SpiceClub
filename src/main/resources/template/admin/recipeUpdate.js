@@ -24,7 +24,6 @@ function constructRecipeTableRow(recipeTableRow, recipe){
    <br>
    
    <br>
- 
    <p id="recipe-description"> Beskrivelse: ${(recipe.description)}</p>
   <br>
   
@@ -36,7 +35,6 @@ function constructRecipeTableRow(recipeTableRow, recipe){
    <p><img id="recipe-image" src="${(recipe.image)}">Billede: virker ikke endnu</p>
    <br>
   
- 
     <button id="update-button-${recipe.id}">Redigere</button> 
     <button onclick="myhref2(${recipe.id})">❌</button>
         
@@ -64,7 +62,7 @@ function updateRecipe(recipe) {
             <br><textarea id="update-recipe-description-${recipe.id}">${escapeHTML(recipe.description)}</textarea><br>
             
             <br><label>Fremgangsmåde: </label>
-            <br><textarea id="update-recipe-recipeMethod-${recipe.id}">${escapeHTML(recipe.recipe_method)}</textarea><br>
+            <br><textarea  id="editor1${recipe.id}">${escapeHTML(recipe.recipe_method)}</textarea><br>
             
             <br><label>Ingredienser: </label>
             <br><textarea id="update-recipe-ingredient-${recipe.id}">${escapeHTML(recipe.ingredient)}</textarea><br>

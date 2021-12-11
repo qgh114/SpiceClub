@@ -1,4 +1,5 @@
-ClassicEditor.create( document.querySelector( '#editor' ), {
+/*ClassicEditor
+    .create( document.querySelector( '#editor' ), {
         toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
         heading: {
             options: [
@@ -10,5 +11,18 @@ ClassicEditor.create( document.querySelector( '#editor' ), {
     } )
     .catch( error => {
         console.log( error );
-    } );
+    } );*/
 
+
+
+
+let editor;
+
+ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .then( newEditor => {
+        editor = newEditor;
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
