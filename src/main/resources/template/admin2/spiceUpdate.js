@@ -91,9 +91,3 @@ function updateSpiceBackend(spiceId) {
 }
 
 
-/*
-<p className="row-owner-firstName">${escapeHTML(spice.name)}</p>
-
-<p className="row-owner-lastName">${escapeHTML(owner.lastName)}</p>
-
-<button id="update-button-${owner.id}">🥯</button>*/

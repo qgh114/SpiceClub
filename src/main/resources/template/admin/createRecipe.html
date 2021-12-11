@@ -5,7 +5,7 @@
     <link rel=stylesheet href="../global/global.css">
     <link rel=stylesheet href="./recipe.css">
     <link rel=stylesheet href="../frontpage/frontpage.css">
-    <title>Title</title>
+    <title>Tilføj opskrift</title>
 </head>
 <body>
 <nav class="navbar">
@@ -13,7 +13,7 @@
     <h5> <a href="../admin/recipes.html">Opskrifter</a></h5>
     <h5><a href="../admin2/spice.html">Krydderier</a></h5>
     <h5>Statistik</h5>
-    <h5>Blog</h5>
+    <h5><a href="../admin3/blog.html ">Blog</a></h5>
     <h5>Bestillinger</h5>
     <div class="profile">
         <span class="search-bar"></span>
@@ -51,7 +51,9 @@
 </div>
 
 <script src="./createRecipe.js"></script>
+
 <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
+<script>let data = CKEDITOR.instances.editor.getData();// Your code to save "data", usually through Ajax.</script>
 
 <script src="./textEditor.js"></script>
 <script src="../global/global.js"></script>

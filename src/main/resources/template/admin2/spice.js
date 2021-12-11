@@ -1,6 +1,6 @@
 const spiceTableBody = document.getElementById("spice-tbody");
 
-fetch("http://localhost:8080/spices")
+fetch(baseURL+ "/spices")
     .then(response => response.json())
     .then(data => {
         console.log(data)

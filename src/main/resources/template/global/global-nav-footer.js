@@ -7,14 +7,16 @@ function getNavbar() {
     navElement.innerHTML = `
     
     <!-- Navigation -->
-    <section class="nav">
+    <nav class="nav">
         <ul>
             <li class="logo"><a href="#">LOGO</a></li>
-            <li class="krydderier"><a href="customer-spice-list.html">Krydderier</a></li>
-            <li class="opskrifter"><a href="../customer/recipe/recipe-list.html">Opskrifter</a></li>
+            <!-- navbar virker ikke som det skal -->
+             <li class="blog"><a href="">Blog</a></li>
+            <li class="krydderier"><a href="">Krydderier</a></li>
+            <li class="opskrifter"><a href=>Opskrifter</a></li>
 
         </ul>
-    </section>
+    </nav>
     `;
 
     tbodyNav.appendChild(navElement);

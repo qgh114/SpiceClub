@@ -1,0 +1,42 @@
+
+
+#blog-wrapper {
+    text-align: center;
+    padding-top: 100px;
+}
+/*inde på siden hvor man kan redigere. præcis samme styling som inde på "tilføje krydderi""*/
+
+#blog-wrapper input[id^="update-blog-title-"]{
+    height:20px;
+    width: 200px;
+}
+#blog-wrapper textarea[id^="update-blog-description-"]{
+
+    height:200px;
+    width: 200px;
+
+}
+
+
+
+
+#blog-wrapper input[id^="update-blog-image-"]{
+    height:20px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

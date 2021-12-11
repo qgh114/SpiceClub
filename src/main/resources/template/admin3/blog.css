@@ -4,7 +4,7 @@ h1{
     text-align: center;
 }
 
-#add-spice {
+#add-blog {
     margin: 0;
     position: absolute;
     top: 10%;
@@ -15,7 +15,7 @@ h1{
 }
 
 /*table*/
-#spiceList {
+#blogList {
     border-collapse: collapse;
     width: 60%;
     margin:auto;
@@ -25,17 +25,17 @@ h1{
 }
 
 
-#spiceList td, #spiceList th {
+#blogList td, #blogList th {
     padding: 8px;
 
 }
 
 
-#spiceList tr:nth-child(even){background-color: #f2f2f2;}
+#blogList tr:nth-child(even){background-color: #f2f2f2;}
 
-#spiceList tr:hover {background-color: #ddd;}
+#blogList tr:hover {background-color: #ddd;}
 
-#spiceList th {
+#blogList th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -51,31 +51,41 @@ h2 {
     text-align: center;
 }
 
-#spice {
+#blog {
     text-align: center;
     padding-top: 20px;
 
 }
 
-#create-spice-price {
-     height:20px;
-     width: 200px;
 
- }
-#create-spice-name {
+#create-blog-title {
     height:20px;
     width: 200px;
 
 }
 
-#create-spice-description {
+#create-blog-description {
     height:200px;
     width: 200px;
 
 }
 
-#create-spice-image {
+#create-blog-image {
     height:20px;
     width: 200px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

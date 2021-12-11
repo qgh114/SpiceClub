@@ -46,6 +46,10 @@ body {
 .nav .opskrifter{
     float:right;
 }
+
+.nav .blog{
+    float:right;
+}
 .nav ul{
     height: 65px;
 }

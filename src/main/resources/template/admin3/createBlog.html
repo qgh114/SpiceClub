@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="blog.css">
     <link rel=stylesheet href="../frontpage/frontpage.css">
-    <link rel=stylesheet href="./spice.css">
-    <title>Tilføj Krydderi</title>
+    <title>Tilføje Blog</title>
 </head>
 <body>
 
@@ -23,35 +22,29 @@
     </div>
 </nav>
 
-<h2>Tilføj et krydderi</h2>
 
-<div id="spice">
+<h2>Tilføj en blog</h2>
+
+<div id="blog">
 
     <label>Navn</label>
     <br>
-    <input id="create-spice-name" placeholder="Indtast navnet på krydderiet">
+    <input id="create-blog-title" placeholder="Indtast navnet på blog">
     <br><br>
     <label>Beskrivelse</label>
     <br>
-    <textarea id="create-spice-description" placeholder="Indtast beskrivelsen af krydderiet"></textarea>
-    <br><br>
-    <label>Pris</label>
-    <br>
-    <input type=number id="create-spice-price" placeholder="Indtast prisen på krydderiet">
+    <textarea id="create-blog-description" placeholder="Indtast beskrivelsen af blog"></textarea>
     <br><br>
     <label>Billede</label>
     <br>
-    <input  type="file" id="create-spice-image" placeholder="Indsæt billed til krydderiet" name="image-name">
+    <input  type="file" id="create-blog-image" placeholder="Indsæt billed til blog" name="image-name">
     <br> <br>
-    <button id="button-plus" onclick="createSpice(); myhref2()">+</button>
+    <button id="button-plus" onclick="createBlog(); myhref2()">+</button>
 
 </div>
 
-
-<script src="createSpice.js"></script>
+<script src="createBlog.js"></script>
 <script src="../global/global.js"></script>
-
-
 
 </body>
 </html>

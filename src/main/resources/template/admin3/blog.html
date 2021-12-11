@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel=stylesheet href="../frontpage/frontpage.css">
+    <link rel="stylesheet" href="blog.css">
     <script src="../lib/escapeHTML.js"></script>
     <script src="../global/global.js"></script>
-    <link rel="stylesheet" href="updateSpice.css">
-    <link rel=stylesheet href="../frontpage/frontpage.css">
-    <title>Opdater Krydderi</title>
-
+    <title>blogs</title>
 </head>
 <body>
+
 
 <nav class="navbar">
     <h2><a href="../frontpage/frontpage.html">Dashboard</a></h2>
@@ -17,7 +17,6 @@
     <h5><a href="../admin2/spice.html">Krydderier</a></h5>
     <h5>Statistik</h5>
     <h5><a href="../admin3/blog.html ">Blog</a></h5>
-    <h5>Bestillinger</h5>
     <div class="profile">
         <span class="search-bar"></span>
         <img class="profile-image" src="https://picsum.photos/200/200?random=1">
@@ -25,15 +24,27 @@
     </div>
 </nav>
 
+<h1>Liste med blog</h1>
+<button id="add-blog" onclick= myhref() >Tilføje blog</button>
+
+<table id="blogList">
+    <thead>
+    <tr>
+
+        <th>Titel</th>
+        <th>Detaljer</th>
+    </tr>
+    </thead>
+
+    <tbody id="blog-tbody">
 
 
-<div id="spice-wrapper">
+    </tbody>
+</table>
 
+<script src="./blog.js"></script>
 
-</div>
+<script src="./createBlog.js"></script>
 
-
-<script src="./spiceUpdate.js"></script>
-<script src="./spiceDelete.js"></script>
 </body>
 </html>

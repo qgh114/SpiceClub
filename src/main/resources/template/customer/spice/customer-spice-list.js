@@ -32,14 +32,4 @@ function createSpice (spice) {
 
 }
 
-/*<div id ="spice-list">
-   <div>
-        <img src="./oregano.jpg">
-        <p>${(spice.name)}</p>
-        <p>${(spice.price)} kr ,-</p>
-        <div class="kurv">
-            <button>Tilføj til kurv</button>
-            <p class="like">Hjerte</p>
-        </div>
-    </div>*/
 
