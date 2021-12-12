@@ -13,7 +13,13 @@
 
 }
 
+.footer-info{
 
+    flex-direction: column;
+    column-count: 4;
+    padding-left: 150px;
+
+}
 
 .social-footer .social-footer-icons .fa {
     font-size: 2rem;
@@ -28,17 +34,45 @@
     text-align: center;
     font-size: 1rem;
     font-weight: bolder;
+    display: flex;
 }
-.terms {
-    text-align: center;
-    top: 2rem;
-    font-weight: bolder;
-}
+
 .delivery {
     text-align: center;
     top: 2rem;
     font-weight: bolder;
+    display: flex;
 }
+
+.privacy-policy{
+    text-align: center;
+    top: 2rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+.terms-of-trade {
+    text-align: center;
+    top: 2rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+.health-rapport{
+    text-align: center;
+    top: 2rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+.cookie-policy{
+    text-align: center;
+    top: 2rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+
 a {
     text-decoration: none;
     color: black;
