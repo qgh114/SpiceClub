@@ -1,4 +1,4 @@
-
+let editor1;
 
 InlineEditor
     .create( document.querySelector( '#editor1' ) )

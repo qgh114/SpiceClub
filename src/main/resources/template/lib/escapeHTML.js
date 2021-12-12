@@ -5,5 +5,5 @@ function escapeHTML(string) {
         .replaceAll(`>`, "&gt;")
         .replaceAll(`<`, "&lt;")
         .replaceAll(`"`, "&quot;")
-        .replaceAll(`/`, "&#039;");
+        .replaceAll("/", "&#047;");
 }

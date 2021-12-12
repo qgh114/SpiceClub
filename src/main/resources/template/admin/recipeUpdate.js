@@ -27,7 +27,7 @@ function constructRecipeTableRow(recipeTableRow, recipe){
    <p id="recipe-description"> Beskrivelse: ${(recipe.description)}</p>
   <br>
   
-   <p id="editor"> Fremgangsmåde: ${(recipe.recipe_method)}</p>
+   <p id="recipe-method"> Fremgangsmåde: ${(recipe.recipe_method)}</p>
    <br>
   
    <p id="recipe-ingredient"> Ingredienser: ${(recipe.ingredient)}</p>
@@ -62,7 +62,7 @@ function updateRecipe(recipe) {
             <br><textarea id="update-recipe-description-${recipe.id}">${escapeHTML(recipe.description)}</textarea><br>
             
             <br><label>Fremgangsmåde: </label>
-            <br><textarea  id="editor1${recipe.id}">${escapeHTML(recipe.recipe_method)}</textarea><br>
+            <br><textarea id="editor">${escapeHTML(recipe.recipe_method)}</textarea><br>
             
             <br><label>Ingredienser: </label>
             <br><textarea id="update-recipe-ingredient-${recipe.id}">${escapeHTML(recipe.ingredient)}</textarea><br>
@@ -73,6 +73,7 @@ function updateRecipe(recipe) {
            <button onclick="updateRecipeBackend(${recipe.id})">✅</button><br>
           
             `;
+    editText()
 }
 
 
@@ -102,3 +103,15 @@ function updateRecipeBackend(recipeId) {
     });
 }
 
+function editText() {
+    let editor;
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(newEditor => {
+            editor = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}

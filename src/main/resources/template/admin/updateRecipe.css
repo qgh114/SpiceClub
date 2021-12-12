@@ -10,7 +10,7 @@
     height:20px;
     width: 200px;
 }
-#recipe-wrapper textarea[id^="update-recipe-description-"]{
+#recipe-wrapper textarea [id^="update-recipe-description-"]{
 
     height:200px;
     width: 200px;
