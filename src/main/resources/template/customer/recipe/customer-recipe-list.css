@@ -84,7 +84,7 @@ body {
 }
 
 .item {
-    height: 400px;
+    height: 400px; /* den her får boksen til at se stor ud i opskrift liste på hjemmeside*/
 
     margin-bottom: 5rem;
     margin-right: 1rem;

@@ -31,6 +31,25 @@
     width: 200px;
 }
 
+#recipe-description {
+    font-weight: bold;
+}
+
+#recipe-method {
+    font-weight: bold;
+}
+
+#recipe-ingredient {
+    font-weight: bold;
+}
+
+#recipe-image {
+    font-weight: bold;
+}
+
+
+
+
 
 
 
