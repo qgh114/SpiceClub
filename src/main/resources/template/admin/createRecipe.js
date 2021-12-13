@@ -1,12 +1,12 @@
-const createRecipeForm = document.getElementById("recipe");
+
 
 function createRecipe(){
     const recipeToCreate = {
         name:document.getElementById("create-recipe-name").value,
         recipe_method: editor.getData(),
-        ingredient:document.getElementById("create-recipe-ingredient").value,
+        ingredient:editor1.getData(),
         image:document.getElementById("create-recipe-image").value,
-        description:document.getElementById("create-recipe-description").value
+        description:editor2.getData()
 
     }
 
@@ -33,3 +33,6 @@ function myhref() {
 }
 
 
+<!-- ingredient:document.getElementById("create-recipe-ingredient").value,-->
+/*
+description:document.getElementById("create-recipe-description").value*/

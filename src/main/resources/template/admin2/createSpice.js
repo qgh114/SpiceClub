@@ -1,10 +1,10 @@
-const createSpiceButton = document.getElementById('create-spice-button')
+
 
 
 function createSpice(){
     const spiceToCreate = {
         name:document.getElementById("create-spice-name").value,
-        description:document.getElementById("create-spice-description").value,
+        description: editor.getData(),
         price:document.getElementById("create-spice-price").value,
         image:document.getElementById("create-spice-image").value,
     }
@@ -26,3 +26,5 @@ function myhref2() {
     location.assign('spice.html');
 }
 
+
+/*document.getElementById("create-spice-description").value,*/

@@ -24,17 +24,17 @@ function createTable(recipe) {
         <div class="col">
             <figure>
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgranditaliacdnprodimages.azureedge.net%2Ffiles%2Fimported_images%2Frecipes%2F700%2F000000000000SPAGUETTI_01.jpg&f=1&nofb=1" width="400" alt="">
-                <h3>Ingredienser</h3>
+                <h2>Ingredienser</h2>
                 <p>${(recipe.ingredient)}</p>
             </figure>
         </div>
 
         <div class="col">
-            <h3>Beskrivelse</h3>
+            <h2>Beskrivelse</h2>
             <p>${(recipe.description)}
             </p>
 
-            <h3>Fremgangsmåde</h3>
+            <h2>Fremgangsmåde</h2>
             <p>${(recipe.recipe_method)}</p>
             
         </div>

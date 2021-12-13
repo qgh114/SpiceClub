@@ -1,4 +1,4 @@
-
+let editor;
 const queryString = window.location.search;
 const URLParams = new URLSearchParams(queryString);
 const blogId = URLParams.get("blogId");
@@ -50,14 +50,17 @@ function updateBlog(blog) {
            
             <label>Titel: </label>
            <br><input id="update-blog-title-${blog.id}" value="${escapeHTML(blog.title)}"><br>
+           
            <br><label><b>Beskrivelse: </b></label>
-            <br><textarea id="update-blog-description-${blog.id}">${escapeHTML(blog.description)}</textarea><br>
+            <br><textarea id="editor">${escapeHTML(blog.description)}</textarea><br>
           
             <br><label>Billede: </label>
             <br><input type="file" id="update-blog-image-${blog.id}" value="${(blog.image)}"><br>
            <br> <button onclick="updateBlogBackend(${blog.id})">✅</button><br>
           
             `;
+
+    editText()
 }
 
 function updateBlogBackend(blogId) {
@@ -67,7 +70,7 @@ function updateBlogBackend(blogId) {
     const blogToUpdate = {
         id: blogId,
         title: document.getElementById(`update-blog-title-${blogId}`).value,
-        description: document.getElementById(`update-blog-description-${blogId}`).value,
+        description: editor.getData(),
         image: document.getElementById(`update-blog-image-${blogId}`).value
 
 
@@ -83,6 +86,23 @@ function updateBlogBackend(blogId) {
         }
     });
 }
+
+function editText() {
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(newEditor => {
+            editor = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+
+/*<br><textarea id="update-blog-description-${blog.id}">${escapeHTML(blog.description)}</textarea><br>*/
+
+/*document.getElementById(`update-blog-description-${blogId}`).value,*/
 
 
 

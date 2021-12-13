@@ -1,4 +1,4 @@
-
+let editor;
 const queryString = window.location.search;
 const URLParams = new URLSearchParams(queryString);
 const spiceId = URLParams.get("spiceId");
@@ -9,11 +9,10 @@ fetch(baseURL + "/spices/"+ spiceId)
     .then(response => response.json())
     .then(spice => {
         (createSpiceRow(spice));
-        //spice.map(createSpiceRow);
+
     });
 
 function createSpiceRow(spice) {
-    console.log("here i am in createOwnerRow")
     const spiceRow = document.createElement("div");
     spiceRow.id = spice.id;
 
@@ -26,7 +25,7 @@ function constructSpiceRow(spiceRow, spice) {
     spiceRow.innerHTML = `
    <h1> Detaljer af ${(spice.name)}</h1>
    
-   <!--<p id="spice-name"> Navn: ${(spice.name)}</p>-->
+   
    <br>
    <p id="spice-description"> Beskrivelse: ${(spice.description)}</p>
    <br>
@@ -54,8 +53,10 @@ function updateSpice(spice) {
            
             <label>Navn: </label>
            <br><input id="update-spice-name-${spice.id}" value="${escapeHTML(spice.name)}"><br>
+          
            <br><label><b>Beskrivelse: </b></label>
-            <br><textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea><br>
+            <br><textarea id="editor">${escapeHTML(spice.description)}</textarea><br>
+            
             <br><label>Pris </label>
             <br><input type="number" id="update-spice-price-${spice.id}" value="${(escapeHTML(spice.price.toString()))}"><br>
             <br><label>Billede: </label>
@@ -63,6 +64,7 @@ function updateSpice(spice) {
            <br> <button onclick="updateSpiceBackend(${spice.id})">✅</button><br>
           
             `;
+    editText()
 }
 
 function updateSpiceBackend(spiceId) {
@@ -72,7 +74,7 @@ function updateSpiceBackend(spiceId) {
     const spiceToUpdate = {
         id: spiceId,
         name: document.getElementById(`update-spice-name-${spiceId}`).value,
-        description: document.getElementById(`update-spice-description-${spiceId}`).value,
+        description: editor.getData(),
         price: document.getElementById(`update-spice-price-${spiceId}`).value,
         image: document.getElementById(`update-spice-image-${spiceId}`).value
 
@@ -91,3 +93,20 @@ function updateSpiceBackend(spiceId) {
 }
 
 
+function editText() {
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(newEditor => {
+            editor = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+
+
+
+/*<br><textarea id="update-spice-description-${spice.id}">${escapeHTML(spice.description)}</textarea><br>*/
+/*document.getElementById(`update-spice-description-${spiceId}`).value,*/

@@ -4,7 +4,7 @@ const createSpiceButton = document.getElementById('create-spice-button')
 function createBlog(){
     const blogToCreate = {
         title:document.getElementById("create-blog-title").value,
-        description:document.getElementById("create-blog-description").value,
+        description:editor.getData(),
         image:document.getElementById("create-blog-image").value
     }
 
@@ -25,3 +25,8 @@ function myhref2() {
     location.assign('blog.html');
 }
 
+
+
+/*
+
+description:document.getElementById("create-blog-description").value,*/

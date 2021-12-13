@@ -1,6 +1,7 @@
 const queryString = window.location.search;
 const URLParams = new URLSearchParams(queryString);
 const recipeId = URLParams.get("recipeId");
+let editor;
 
 const recipeBody = document.getElementById("recipe-wrapper");
 
@@ -59,13 +60,13 @@ function updateRecipe(recipe) {
            <br><input id="update-recipe-name-${recipe.id}" value="${escapeHTML(recipe.name)}"><br>
            
            <br><label>Beskrivelse: </label>
-            <br><textarea id="update-recipe-description-${recipe.id}">${escapeHTML(recipe.description)}</textarea><br>
+            <br><textarea id="editor2">${escapeHTML(recipe.description)}</textarea><br>
             
             <br><label>Fremgangsmåde: </label>
             <br><textarea id="editor">${escapeHTML(recipe.recipe_method)}</textarea><br>
             
             <br><label>Ingredienser: </label>
-            <br><textarea id="update-recipe-ingredient-${recipe.id}">${escapeHTML(recipe.ingredient)}</textarea><br>
+            <br><textarea id="editor1">${escapeHTML(recipe.ingredient)}</textarea><br>
             
             <br><label>Billede: </label>
             <br><input type="file" id="update-recipe-image-${recipe.id}"> "${(recipe.image)}"<br>
@@ -74,19 +75,23 @@ function updateRecipe(recipe) {
           
             `;
     editText()
+    editText1()
+    editText2()
 }
 
 
 function updateRecipeBackend(recipeId) {
+
+
 
     const recipeRowToUpdate = document.getElementById(recipeId);
 
     const recipeToUpdate = {
         id: recipeId,
         name: document.getElementById(`update-recipe-name-${recipeId}`).value,
-        description: document.getElementById(`update-recipe-description-${recipeId}`).value,
-        recipe_method: document.getElementById(`update-recipe-recipeMethod-${recipeId}`).value,
-        ingredient: document.getElementById(`update-recipe-ingredient-${recipeId}`).value,
+        description: editor2.getData(),
+        recipe_method: editor.getData(),
+        ingredient:editor1.getData(),
         image: document.getElementById(`update-recipe-image-${recipeId}`).value
 
 
@@ -104,7 +109,6 @@ function updateRecipeBackend(recipeId) {
 }
 
 function editText() {
-    let editor;
 
     ClassicEditor
         .create(document.querySelector('#editor'))
@@ -115,3 +119,36 @@ function editText() {
             console.error(error);
         });
 }
+
+function editText1() {
+
+    ClassicEditor
+        .create(document.querySelector('#editor1'))
+        .then(newEditor => {
+            editor1 = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function editText2() {
+
+    ClassicEditor
+        .create(document.querySelector('#editor2'))
+        .then(newEditor => {
+            editor2 = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+
+
+/* <br><textarea id="update-recipe-ingredient-${recipe.id}">${escapeHTML(recipe.ingredient)}</textarea><br>*/
+/*ingredient: document.getElementById(`update-recipe-ingredient-${recipeId}`).value,*/
+
+
+/*<br><textarea id="update-recipe-description-${recipe.id}">${escapeHTML(recipe.description)}</textarea><br>*/
+/*document.getElementById(`update-recipe-description-${recipeId}`).value,*/

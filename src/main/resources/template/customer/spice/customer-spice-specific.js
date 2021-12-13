@@ -21,9 +21,10 @@ function createSpecificSpice (spice) {
 
         <div class="col">
             <figure>
+            <br><br>
                 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" alt="">
-                    <p>${(spice.name)}</p>
-                    <p>${(spice.price)} kr ,</p>
+                     <h3><strong>${(spice.name)}</strong></h3>
+                     <h3><strong>${(spice.price)} kr ,-</strong></h3>
                     <div class="kurv">
                         <button>Tilføj til kurv</button>
                     </div>
@@ -31,7 +32,7 @@ function createSpecificSpice (spice) {
         </div>
 
         <div class="col">
-            <h3>Beskrivelse </h3>
+            <h2>Beskrivelse </h2>
             <p>${(spice.description)}
             </p>
 
