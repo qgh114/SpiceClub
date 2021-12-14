@@ -9,14 +9,14 @@ body {
     width: 100%;
     max-width: 1200px;
 
+
 }
 
 .sectionwrapper{
     float: right;
     width: 85%;
     justify-content: space-between;
-
-
+    font-size: 18px;
 
 }
 .sectionwrapper:hover{
@@ -26,11 +26,7 @@ body {
 
 
 
-.col{
-    justify-content: space-between;
-    font-size: 20px;
-    max-width: 800px;
-}
+
 
 .image_img {
     float: left;
@@ -48,10 +44,10 @@ body {
     text-align: left;
 
 
-
-
 }
 
 .titel{
     text-align: center;
+
+
 }
