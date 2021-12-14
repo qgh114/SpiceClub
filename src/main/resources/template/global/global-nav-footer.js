@@ -34,25 +34,25 @@ function getFooter() {
   
   <div class="footer-info">
   <div class="contact-info">
-  <a href="contactInfo.html">KONTAKT OS</a>
+  <a href="../../global/contactInfo.html">KONTAKT OS</a>
   </div>
   <div class="delivery">
-  <a href="delivery.html">LEVERING</a>
+  <a href="../../global/delivery.html">LEVERING</a>
   </div>
   <div class="privacy-policy">
-  <a href="privacyPolicy.html">PRIVATPOLITIK</a>
+  <a href="../../global/privacyPolicy.html">PRIVATPOLITIK</a>
   </div>
   
   <div class="terms-of-trade">
-  <a href="termsOfTrade.html">HANDELSBETINGELSER</a>
+  <a href="../../global/termsOfTrade.html">HANDELSBETINGELSER</a>
   </div>
   
   <div class="health-rapport">
-  <a href="healthRapport.html">FØDEVARESTYRRELSENS KONTROLRAPPORTER</a>
+  <a href="../../global/healthRapport.html">FØDEVARESTYRRELSENS KONTROLRAPPORTER</a>
   </div>
   
   <div class="cookie-policy">
-  <a href=cookiePolicy.html">COOKIEPOLITIK</a>
+  <a href=../../global/cookiePolicy.html">COOKIEPOLITIK</a>
   </div>
   
   </div>
