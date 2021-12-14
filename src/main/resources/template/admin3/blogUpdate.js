@@ -5,6 +5,7 @@ const blogId = URLParams.get("blogId");
 
 const spiceBody = document.getElementById("blog-wrapper");
 
+
 fetch(baseURL + "/blogs/"+ blogId)
     .then(response => response.json())
     .then(blogs => {
@@ -25,6 +26,9 @@ function createBlogRow(blog) {
 function constructBlogRow(blogRow, blog) {
     blogRow.innerHTML = `
    <h1> Detaljer af ${(blog.title)}</h1>
+   <br>
+   <p id="blog-shortDescription"> Kort beskrivelse: ${(blog.shortDescription)}</p>
+   <br>
    <br>
    <p id="blog-description"> Beskrivelse: ${(blog.description)}</p>
    <br>
@@ -51,6 +55,10 @@ function updateBlog(blog) {
             <label>Titel: </label>
            <br><input id="update-blog-title-${blog.id}" value="${escapeHTML(blog.title)}"><br>
            
+           
+           <br><label><b>Kort beskrivelse: </b></label>
+            <br><textarea id="editor1">${escapeHTML(blog.shortDescription)}</textarea><br>
+           
            <br><label><b>Beskrivelse: </b></label>
             <br><textarea id="editor">${escapeHTML(blog.description)}</textarea><br>
           
@@ -61,6 +69,7 @@ function updateBlog(blog) {
             `;
 
     editText()
+    editText1()
 }
 
 function updateBlogBackend(blogId) {
@@ -70,6 +79,7 @@ function updateBlogBackend(blogId) {
     const blogToUpdate = {
         id: blogId,
         title: document.getElementById(`update-blog-title-${blogId}`).value,
+        shortDescription: editor1.getData(),
         description: editor.getData(),
         image: document.getElementById(`update-blog-image-${blogId}`).value
 
@@ -93,6 +103,18 @@ function editText() {
         .create(document.querySelector('#editor'))
         .then(newEditor => {
             editor = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function editText1() {
+
+    ClassicEditor
+        .create(document.querySelector('#editor1'))
+        .then(newEditor => {
+            editor1 = newEditor;
         })
         .catch(error => {
             console.error(error);

@@ -9,16 +9,13 @@ body {
     width: 100%;
     max-width: 1200px;
 
-
 }
 
 .sectionwrapper{
     float: right;
     width: 85%;
-    text-align: center;
     justify-content: space-between;
-    margin-bottom: 5rem;
-    margin-right: 1rem;
+
 
 
 }
@@ -32,19 +29,29 @@ body {
 .col{
     justify-content: space-between;
     font-size: 20px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     max-width: 800px;
 }
 
 .image_img {
     float: left;
+    margin-bottom: 5rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+
 }
 .h1 {
     float: right;
     width: 75%;
 }
 
+.blog-desc,read-more-btn{
+    text-align: left;
 
 
+
+
+}
+
+.titel{
+    text-align: center;
+}

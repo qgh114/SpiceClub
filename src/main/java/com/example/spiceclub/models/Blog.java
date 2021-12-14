@@ -16,6 +16,9 @@ public class Blog {
     private String title;
 
     @Column(columnDefinition="TEXT")
+    private String shortDescription;
+
+    @Column(columnDefinition="TEXT")
     private String description;
 
     @Column

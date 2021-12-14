@@ -4,6 +4,7 @@ const createSpiceButton = document.getElementById('create-spice-button')
 function createBlog(){
     const blogToCreate = {
         title:document.getElementById("create-blog-title").value,
+        shortDescription:editor1.getData(),
         description:editor.getData(),
         image:document.getElementById("create-blog-image").value
     }
