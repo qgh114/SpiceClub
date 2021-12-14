@@ -1,6 +1,4 @@
 
-/* customer-spice.html*/
-
 body {
     margin: 0;
     padding: 0px;
@@ -23,17 +21,10 @@ body {
     margin: 0;
 }
 
-img {
-    width: 100%;
-}
-
-.col figure img {
-    height: 250px;
-    width: 250px;
-}
 
 .col {
     text-align: center;
+    font-size: 20px;
 }
 
 .sectionwrapper {

@@ -23,15 +23,10 @@ function createBlog(blog) {
     <div class="sectionwrapper">
 
         <div class="col">
-            <figure>
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" alt="">
-                  
-                   
-            </figure>
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" width="266" alt="">
         </div>
 
         <div class="col">
-            <h3>Beskrivelse </h3>
             <p>${(blog.description)}
             </p>
 

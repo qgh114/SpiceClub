@@ -17,9 +17,6 @@ function createTable(recipe) {
     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgranditaliacdnprodimages.azureedge.net%2Ffiles%2Fimported_images%2Frecipes%2F700%2F000000000000SPAGUETTI_01.jpg&f=1&nofb=1" width="266" alt="">
         <p><strong>${(recipe.name)}</strong></p>
       
-        <p class="kurv">
-         <p>Hjerte</p>
-  </p>
   
 </div>
 

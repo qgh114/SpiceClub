@@ -11,9 +11,9 @@ function getNavbar() {
         <ul>
             <li class="logo"><a href="#">LOGO</a></li>
             <!-- navbar virker ikke som det skal -->
-             <li class="blog"><a href="">Blog</a></li>
-            <li class="krydderier"><a href="http://localhost:63342/SpiceClub/template/customer/spice/customer-spice-list.html?_ijt=ati170iicq99d8bq1mgr8rvtrh">Krydderier</a></li>
-            <li class="opskrifter"><a href="http://localhost:63342/SpiceClub/template/customer/recipe/recipe-list.html?_ijt=vk44pton3bijm4h1ui79gp5rvj">Opskrifter</a></li>
+             <li class="blog"><a href="../../customer/blog/customer-blog-list.html">Blog</a></li>
+            <li class="krydderier"><a href="../../customer/spice/customer-spice-list.html">Krydderier</a></li>
+            <li class="opskrifter"><a href="../../customer/recipe/recipe-list.html">Opskrifter</a></li>
 
         </ul>
     </nav>
@@ -34,25 +34,25 @@ function getFooter() {
   
   <div class="footer-info">
   <div class="contact-info">
-  <a href="http://localhost:63342/SpiceClub/template/global/contactInfo.html?_ijt=ai2fd4s3sdtknr7v0jhms333ga">KONTAKT OS</a>
+  <a href="contactInfo.html">KONTAKT OS</a>
   </div>
   <div class="delivery">
-  <a href="http://localhost:63342/SpiceClub/template/global/delivery.html?_ijt=v3iu0l400c3sctsjr28l18bo69">LEVERING</a>
+  <a href="delivery.html">LEVERING</a>
   </div>
   <div class="privacy-policy">
-  <a href="http://localhost:63342/SpiceClub/template/global/privacyPolicy.html?_ijt=t4koj8j2lbiq3gaj1qa9l2e9va">PRIVATPOLITIK</a>
+  <a href="privacyPolicy.html">PRIVATPOLITIK</a>
   </div>
   
   <div class="terms-of-trade">
-  <a href="http://localhost:63342/SpiceClub/template/global/termsOfTrade.html?_ijt=gospe9a5r6rg7j2h7dr3cab9v5">HANDELSBETINGELSER</a>
+  <a href="termsOfTrade.html">HANDELSBETINGELSER</a>
   </div>
   
   <div class="health-rapport">
-  <a href="http://localhost:63342/SpiceClub/template/global/healthRapport.html?_ijt=gospe9a5r6rg7j2h7dr3cab9v5">FØDEVARESTYRRELSENS KONTROLRAPPORTER</a>
+  <a href="healthRapport.html">FØDEVARESTYRRELSENS KONTROLRAPPORTER</a>
   </div>
   
   <div class="cookie-policy">
-  <a href="http://localhost:63342/SpiceClub/template/global/cookiePolicy.html?_ijt=gospe9a5r6rg7j2h7dr3cab9v5">COOKIEPOLITIK</a>
+  <a href=cookiePolicy.html">COOKIEPOLITIK</a>
   </div>
   
   </div>

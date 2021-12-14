@@ -16,19 +16,12 @@ function createBlog (blog) {
     <div class="sectionwrapper">
 
         <div class="col">
-            <figure>
             <a href="specific-blog.html?blogId=${blog.id}">
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" alt="">
-                  
-            </figure>
-        </div>
-
-        <div class="col">
-           <h1>Titel: ${(blog.title)}</h1>
-            <h3>Beskrivelse </h3>
-            <p>${(blog.description)}
-            </p>
-
+                <img class="image_img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sarajevotimes.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fsalt.jpg&f=1&nofb=1" width="266" alt="">
+                  <h1>${(blog.title)}</h1>
+                <div class="image_overlay">
+                <p class="blog-desc">${(blog.description)}</p>
+                </div>
         </div>
 
     </div>

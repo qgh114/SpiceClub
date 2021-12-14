@@ -5,89 +5,25 @@ body {
 }
 
 
-.nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.nav li {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 50px;
-    font-size: 1.5em;
-    /*padding: -6rem;*/
-}
-
-.nav a {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: 0.3s background-color;
-}
-
-.nav a:hover {
-    background-color: grey;
-    color: white;
-}
-
-.nav ul .logo {
-    float:left;
-}
-.nav .krydderier {
-    float:right;
-
-}
-
-.nav .opskrifter{
-    float:right;
-}
-.nav ul{
-    height: 65px;
-}
-@media screen and (min-width: 600px) {
-    .nav li {
-        width: 120px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-    }
-}
-
-#title {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 2.5rem;
-    margin-top: 3rem;
-}
-@media screen and (min-width: 600px) {
-    .nav li {
-        width: 120px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-    }
-}
-
-
-
 .customer-rec-list{
     display: grid;
     grid-template-columns: repeat(3, minmax(400px, 1fr));
     justify-content: space-between;
     grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+
 
 }
 
 .item {
-    height: 400px; /* den her får boksen til at se stor ud i opskrift liste på hjemmeside*/
+    height: 300px; /* den her får boksen til at se stor ud i opskrift liste på hjemmeside*/
 
     margin-bottom: 5rem;
     margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -101,30 +37,13 @@ body {
     margin: 4rem;
 }
 
-
-
-.container .kurv button {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
-    background-color: white;
-    font-family: sans-serif;
-    font-size: 1rem;
-    border: none;
-}
-
-.container .kurv button:hover {
-    transform: scale(1.2);
-}
-
-.container .kurv,
-button,
 p {
     font-size: 20px;
     font-weight: bolder;
     margin: 0.5rem;
     margin-left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container a {
