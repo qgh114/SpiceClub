@@ -9,8 +9,7 @@ function getNavbar() {
     <!-- Navigation -->
     <nav class="nav">
         <ul>
-            <li class="logo"><a href="#">LOGO</a></li>
-            <!-- navbar virker ikke som det skal -->
+            <img class="logo" alt="spiceclub-logo" src="../../../../../SpiceClub/template/global/spiceclub1.png" ="#"></img>
              <li class="blog"><a href="../../customer/blog/customer-blog-list.html">Blog</a></li>
             <li class="krydderier"><a href="../../customer/spice/customer-spice-list.html">Krydderier</a></li>
             <li class="opskrifter"><a href="../../customer/recipe/recipe-list.html">Opskrifter</a></li>
@@ -29,7 +28,7 @@ function getFooter() {
     footerElement.innerHTML = `
 <footer class="social-footer">
   <div class="social-footer-left">
-    <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
+    <a href="#"><img alt="spiceclub-logo" class="logo" src="../../../../../SpiceClub/template/global/spiceclub1.png"></a>
   </div>
   
   <div class="footer-info">
